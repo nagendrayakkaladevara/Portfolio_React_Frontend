@@ -1,0 +1,699 @@
+.startposition1 {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 100px;
+    transform: rotate(90deg);
+}
+
+.startposition2 {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    width: 100px;
+    transform: rotate(90deg);
+}
+
+.CMDIcon {
+    width: 30px;
+    height: 30px;
+    /* position: absolute;
+    bottom: 20%; */
+    cursor: pointer;
+}
+
+.plant {
+    position: absolute;
+    bottom: 10px;
+    right: 450px;
+}
+
+.lgbtq {
+    position: absolute;
+    bottom: 10px;
+    left: 450px;
+}
+
+.textColor {
+    /* white color text  */
+    color: #F0F3FF;
+}
+
+.articalBlockCustom {
+    width: auto;
+    height: 350px;
+    background: #a0ddd4;
+}
+
+.articalBlockImageCustom {
+    width: 150% !important;
+    max-width: 200% !important;
+    margin-left: 30px;
+}
+
+.mobileBlockCustom {
+    width: 30%;
+    background: #bddff9;
+}
+
+.mobileBlockImageCustom {
+    height: 520px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.brandingBlockCustom {
+    width: auto;
+    background: white;
+}
+
+.topsectioncustom {
+    width: 60%;
+}
+
+.UXBlockCustom {
+    width: 90%;
+    background: #e8b89c;
+}
+
+.UXBlockImageCustom {
+    width: 100%;
+}
+
+.linkedsectioncustom {
+    width: 500px;
+    height: auto;
+    background: #2d483f;
+    color: white;
+}
+
+.mediaIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.footetSection>p {
+    width: 100px;
+    margin: 10px;
+    color: #BFD8AF;
+}
+
+.profilepicturecustom {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.introsectioncustom {
+    color: white;
+}
+
+.companylogo {
+    width: 150px;
+}
+
+.disignationname {
+    font-size: 20px;
+    color: white;
+}
+
+.workexprenceheading {
+    color: #BFD8AF;
+    font-size: 25px;
+    margin: 0px 0px 30px 0px
+}
+
+.detailsSections {
+    color: white;
+    font-size: 15px;
+}
+
+.companytitle {
+    color: white;
+    font-size: 13px;
+}
+
+.areatitle {
+    font-size: 15px;
+    color: white;
+}
+
+.institute {
+    color: white;
+    font-size: 12px;
+}
+
+.myIntoText {
+    font-size: 25px;
+}
+
+.year {
+    font-size: 10px;
+    color: white;
+}
+
+.TechnologiesHeading {
+    padding: 15px 60px;
+    background: #BFD8AF;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.techblur {
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    /* background: rgba(255, 255, 255, 0.35); */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.tranperentblur {
+    color: #FBF6EE;
+    /* background: rgba(255, 255, 255, 0); */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.tranperentblur:hover {
+    background: linear-gradient(to left, #618264, #79AC78);
+}
+
+.projectstechblur {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background: rgba(255, 255, 255, 0.35);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.fucouseeffect {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+
+.fucouseeffect:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+
+.hobbieName {
+    font-size: 15px;
+    color: white;
+}
+
+.backcolor {
+    background: linear-gradient(to right, #294B29, #50623A, #789461);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.backcolor>a {
+    font-size: 15px;
+}
+
+.backcolor>p {
+    font-size: 15px;
+}
+
+.backcolor>a:hover {
+    color: #EBD9B4;
+}
+
+/* Toggle switch styling */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #294B29;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.toggle-slider {
+    background-color: white;
+}
+
+input:focus+.toggle-slider {
+    box-shadow: 0 0 1px white;
+}
+
+input:checked+.toggle-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.ProjectTitle {
+    font-size: 20px;
+    color: #12372A;
+
+    font-weight: 900;
+}
+
+.ProjectTitleName {
+    font-size: 20px;
+    font-weight: 900;
+    color: #416D19;
+}
+
+
+.inputtagcustom {
+    background-color: #BFD8AF;
+    outline: none;
+    color: #294B29;
+    font-weight: 900;
+}
+
+.inputtagcustom::placeholder {
+    color: #12372A;
+    font-weight: 900;
+}
+
+.blogcardtitle {
+    font-size: 20px;
+}
+
+.blogcarddiscription {
+    font-size: 12px;
+    text-align: justify;
+    margin: 5px 0px;
+}
+
+.blogPostSection {
+    background: linear-gradient(to right, #BAD7DF, #F1E4C3);
+    border-radius: 10px;
+
+}
+
+.blogdiscription {
+    font-size: 15px;
+}
+
+.BlogDate {
+    font-size: 15px;
+}
+
+.articalandresourcesintro {
+    border-radius: 10px;
+}
+
+.BrandingImageImagess {
+    width: 600px;
+    border-radius: 20px;
+}
+
+.mobilescreenimagesSection {
+    background: #EBD9B4;
+    padding: 30px;
+    padding-bottom: 0px;
+    /* margin: 40px 0px; */
+    border-radius: 20px;
+    width: 400px;
+}
+
+.projectLink {
+    color: white;
+}
+
+.Projectdescription {
+    font-size: 15px;
+    font-weight: 900;
+    color: #416D19;
+}
+
+.projectdecriptionkeypoints {
+    background: linear-gradient(to right, #DDFFBC, #91C788);
+    text-align: justify;
+    color: #12372A;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 10px 0px !important;
+    font-weight: 900 !important;
+}
+
+.subheadingpsdtohtml {
+    background: linear-gradient(to right, #DDFFBC, #91C788);
+    display: inline-flex;
+    padding: 7px 30px;
+    border-radius: 20px;
+    transition: background 1s ease;
+    animation: changeGradient 3s infinite alternate;
+}
+
+.blurcard {
+    padding: 10px;
+    margin: 10px 0px;
+    background: rgba(255, 255, 255, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+@keyframes changeGradient {
+    0% {
+        background: linear-gradient(to right, #C5EBAA, #A5DD9B);
+
+    }
+
+    50% {
+        background: linear-gradient(to right, #DDFFBC, #91C788);
+
+    }
+
+    100% {
+        background: linear-gradient(to right, #C5EBAA, #A5DD9B);
+
+    }
+}
+
+
+/* cmd styles  */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.popup-content {
+    background-color: #0c0c0c;
+    /* padding: 20px; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    height: 50%;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content button {
+    margin-top: 10px;
+}
+
+.CMDwindow {}
+
+.PowerShellTextdiv {
+    background: #0c0c0c;
+    padding: 5px 50px 5px 10px;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: -6px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.PowerShellText {
+    font-size: 10px;
+    color: white;
+}
+
+.CommendLine {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.HeaderSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #333333;
+    border-radius: 4px 4px 0px 0px;
+    align-items: center;
+}
+
+.HeaderButtonDiv {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.command-interface {
+    overflow-y: scroll;
+    height: 410px;
+    padding: 10px 5px 0px 5px;
+}
+
+
+.command-interface::-webkit-scrollbar {
+    width: 4px;
+}
+
+.command-interface::-webkit-scrollbar-track {
+    background: #0c0c0c;
+}
+
+.command-interface::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+ 
+.command-interface::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+    .startposition1 {
+        position: absolute;
+        top: 40px;
+        right: 10px;
+        width: 50px;
+        transform: rotate(90deg);
+    }
+
+    .startposition2 {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        width: 50px;
+        transform: rotate(90deg);
+    }
+
+    .plant {
+        bottom: 0px;
+        right: 100px;
+    }
+
+    .lgbtq {
+        bottom: 0px;
+        left: 100px;
+    }
+
+    .articalBlockCustom {
+        width: 90%;
+        height: auto;
+    }
+
+    .mobileBlockCustom {
+        width: 90%;
+        height: 500px;
+    }
+
+    .brandingBlockCustom {
+        width: 90%;
+    }
+
+    .topsectioncustom {
+        width: 100%;
+    }
+
+    .mobileBlockImageCustom {
+        height: max-content;
+        width: 100%;
+        margin: 0;
+    }
+
+    .myIntoText {
+        font-size: 15px;
+        padding: 10px 20px 10px 10px;
+    }
+
+    .linkedsectioncustom {
+        width: 90%;
+        height: auto;
+    }
+
+    .mediaIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profilepicturecustom {
+        width: 150px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .companylogo {
+        width: 100px;
+    }
+
+    .workexprenceheading {
+        color: #BFD8AF;
+        font-size: 15px;
+        margin: 0px 0px 30px 0px
+    }
+
+    .disignationname {
+        font-size: 15px;
+    }
+
+    .educationsection {
+        width: 90%;
+    }
+
+    .workexperiencesection {
+        width: 90%;
+    }
+
+    .detailsSections {
+        font-size: 12px;
+    }
+
+    .TechnologiesHeading {
+        padding: 10px 30px;
+        background: #BFD8AF;
+        border-radius: 20px;
+    }
+
+    .hobbieName {
+        font-size: 12px;
+    }
+
+    .backcolor>a {
+        font-size: 15px;
+    }
+
+    .ProjectTitle {
+        font-size: 15px;
+    }
+
+    .ProjectTitleName {
+        font-size: 15px;
+    }
+
+    .blogcardtitle {
+        font-size: 15px;
+    }
+
+    .blogcarddiscription {
+        font-size: 10px;
+        text-align: justify;
+        margin: 5px 0px;
+    }
+
+    .BlogDate {
+        font-size: 10px;
+    }
+
+    .mobilescreenimagesSection {
+        background: #EBD9B4;
+        padding: 20px;
+        padding-bottom: 0px;
+        margin: 0px 10px;
+        border-radius: 20px;
+        width: auto;
+    }
+
+    .Projectdescription {
+        font-size: 12px;
+    }
+
+    .blogdiscription>p {
+        text-align: justify;
+    }
+
+    .PowerShellTextdiv {
+        padding: 5px 15px 5px 5px;
+    }
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    /* border: 1px solid #294B29; */
+    text-align: left;
+    padding: 8px;
+    /* border-radius: 10px; */
+}
+
+tr:nth-child(odd) {
+    background-color: #789461;
+}
+
+tr:nth-child(even) {
+    background-color: #435334;
+}
