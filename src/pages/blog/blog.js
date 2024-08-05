@@ -31,7 +31,8 @@ const Blog = () => {
         <>
             <div>
                 <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10 focus-in-expand ' style={{ color: "#BFD8AF" }}>Welcome.</p>
-                {loading ? (<>
+               <p className='flex justify-center'style={{ color: "#BFD8AF", padding:"10px" }}>I share blog posts to help fellow developers, and I’ll be updating it every weekend.</p>
+               {loading ? (<>
                     <div style={{ display: 'flex', justifyContent: 'center', height: "500px", alignItems: "center" }}>
                         <span className="loader"></span>
                     </div>

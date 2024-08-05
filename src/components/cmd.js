@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import '../styles/styles.css';
 import CMSHeaderIcon from '../asserts/images/WIndows-Terminal-icon.png'
 
 const Popup = ({ isOpen, togglePopup }) => {
+
+    useEffect(() => {
+        if (isOpen) {
+            window.scrollTo(0, 0);
+        }
+    }, [isOpen]);
 
     const [input, setInput] = useState('');
     const [output, setOutput] = useState([]);
@@ -138,7 +144,7 @@ const Popup = ({ isOpen, togglePopup }) => {
 
                                 <div className='HeaderButtonDiv'>
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-dash" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" className="bi bi-dash" viewBox="0 0 16 16" onClick={togglePopup} style={{cursor:"pointer"}}>
                                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
                                     </svg>
 

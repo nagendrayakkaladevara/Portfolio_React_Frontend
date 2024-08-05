@@ -20,48 +20,55 @@ import Project from './pages/projects/project';
 import BlogPost from './pages/blog/blogPost';
 import { useEffect } from 'react';
 import SmoothScroll from './components/SmoothScroll';
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
-  }, []); 
+  }, []);
+  
   return (
     <>
-      <Router>
-        <SmoothScroll />
-        <div className='main'>
-          <NavBar />
-          <Routes>
-            <Route
-              path="/"
-              element={<Application />}
-            ></Route>
-            <Route
-              path="/about"
-              element={<About />}
-            ></Route>
-            <Route
-              path="/contacts"
-              element={<Contacts />}
-            ></Route>
-            <Route
-              path="/projects"
-              element={<Projects />}
-            ></Route>
-            <Route
-              path="/blog"
-              element={<Blog />}
-            ></Route>
-            <Route path='/articlesAndresources' element={<ArticlesAndresourcess />} />
-            <Route path="/brandingvalues" element={<Brandingvalues />} />
-            <Route path="/responsiveApplications" element={<ResponsiveApplications />} />
-            <Route path="/psdtohtml" element={<Psdtohtml />} />
-            <Route path="/project/:projectName" element={<Project />} />
-            <Route path="/blog/:blogId" element={<BlogPost />} />
-          </Routes>
-          <Footer />
-        </div>
-      </Router>
+      <PrimeReactProvider>
+
+        <Router>
+          <SmoothScroll />
+          <div className='main'>
+            <NavBar />
+            <Routes>
+              <Route
+                path="/"
+                element={<Application />}
+              ></Route>
+              <Route
+                path="/about"
+                element={<About />}
+              ></Route>
+              <Route
+                path="/contacts"
+                element={<Contacts />}
+              ></Route>
+              <Route
+                path="/projects"
+                element={<Projects />}
+              ></Route>
+              <Route
+                path="/blog"
+                element={<Blog />}
+              ></Route>
+              <Route path='/articlesAndresources' element={<ArticlesAndresourcess />} />
+              <Route path="/brandingvalues" element={<Brandingvalues />} />
+              <Route path="/responsiveApplications" element={<ResponsiveApplications />} />
+              <Route path="/psdtohtml" element={<Psdtohtml />} />
+              <Route path="/project/:projectName" element={<Project />} />
+              <Route path="/blog/:blogId" element={<BlogPost />} />
+            </Routes>
+            <Footer />
+          </div>
+        </Router>
+      </PrimeReactProvider>
+
     </>
   );
 }

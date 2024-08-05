@@ -17,6 +17,16 @@ import SVNIcon from '../../asserts/images/svnicon.png';
 import GitHubIcon from '../../asserts/images/githubicon.png';
 import SpotifyPlayTelugulist from "../../components/spotifyPlayTelugulist";
 import SpotifyEmbed from "../../components/spotifyEmbed";
+import Typescripticon from '../../asserts/images/typescript-icon.png';
+import NodejsIcon from '../../asserts/images/Node.js_logo.png';
+import TailwindCssIcon from '../../asserts/images/tailwindicon.png';
+import MatrailUi from '../../asserts/images/material-ui-logo-thumbnail-removebg-preview.png';
+import dasyiUI from '../../asserts/images/dasisyuiicon.png';
+import PrimeReact from '../../asserts/images/primereact-logo.png';
+import Bootstrap from '../../asserts/images/bootstrapicon.png';
+import GitTea from '../../asserts/images/Gitea_Logo.png';
+import GoogleIDX from '../../asserts/images/googleidx.png';
+
 import '../../styles/styles.css';
 
 const StarIcon = ({ width = "16", height = "16", fill = "#FCDC2A" }) => (
@@ -61,8 +71,36 @@ const About = () => {
             "title": "React"
         },
         {
+            "icon": Typescripticon,
+            "title": "TypeScript"
+        },
+        {
+            "icon": TailwindCssIcon,
+            "title": "Tailwind CSS"
+        },
+        {
+            "icon": MatrailUi,
+            "title": "Material UI"
+        },
+        {
+            "icon": dasyiUI,
+            "title": "dasyi UI"
+        }, ,
+        {
+            "icon": PrimeReact,
+            "title": "PrimeReact"
+        }, ,
+        {
+            "icon": Bootstrap,
+            "title": "Bootstrap"
+        },
+        {
             "icon": NextjsIcon,
             "title": "NextJs"
+        },
+        {
+            "icon": NodejsIcon,
+            "title": "NodeJs"
         },
         {
             "icon": ExpressJsIcon,
@@ -71,14 +109,6 @@ const About = () => {
             "icon": MongodbIcon,
             "title": "Mongodb"
         },
-        // {
-        //     "icon": JavaIcon,
-        //     "title": "Java"
-        // },
-        // {
-        //     "icon": MySqlIcon,
-        //     "title": "My Sql"
-        // }
     ]
 
     const IDEData = [
@@ -94,6 +124,10 @@ const About = () => {
         {
             "icon": IntiljIonc,
             "title": "intellij"
+        },
+        {
+            "icon": GoogleIDX,
+            "title": "Google IDX"
         }
     ]
 
@@ -140,6 +174,10 @@ const About = () => {
         {
             "title": GitHubIcon,
             "name": "Github",
+        },
+        {
+            "title": GitTea,
+            "name": "Gitea",
         }
     ]
 
@@ -273,7 +311,7 @@ const About = () => {
                 <a href='https://arcus-www.amazon.in/dp/B0CHJBNDMG?_encoding=UTF8&psc=1&ref_=cm_sw_r_cp_ud_dp_XNDB0QZS06HSBCWCS103&s=computers' target='_black'>Mechanical Keyboard - Kreo Hive - 2999<Rupee /></a><br />
                 <a href='Portronics Toad Ergo Vertical Advanced Wireless Ergonomic Mouse 2.4Ghz'>Mouse - Portronics Ergonomic Mouse- 599<Rupee /></a>
             </div>
- 
+
 
         </>
     )

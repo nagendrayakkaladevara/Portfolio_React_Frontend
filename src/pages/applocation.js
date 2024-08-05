@@ -15,6 +15,11 @@ import {
 import MediaInfo from "../components/media";
 import { Helmet } from "react-helmet";
 import Popup from "../components/cmd";
+import { Dialog } from "primereact/dialog";
+import CMDImage from '../asserts/images/Windows_Terminal_logo.png';
+import MACImage from '../asserts/images/maccmd.png';
+import { Button } from "primereact/button";
+import Terminal from "../components/terminal";
 
 const Application = () => {
     const IntroMessage = 'My passion lies in crafting engaging, accessible, and user-centric experiences that leave a lasting impact.';
@@ -40,6 +45,9 @@ const Application = () => {
             document.body.style.overflow = 'auto';
         };
     }, [isOpen]);
+
+
+
 
     return (
         <>
@@ -81,11 +89,16 @@ const Application = () => {
 
                 <Popup isOpen={isOpen} togglePopup={togglePopup} />
                 <p className="m-10 text-xs sm:text-xl flex justify-center flex-wrap" style={{ color: "#F0F3FF" }}>{IntroMessage}</p>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <p style={{ fontSize: '12px', color: 'white' }}>Check out my command proment - </p>
-                    <img src={CMDIcon} alt="star" className="CMDIcon" onClick={togglePopup} title="Click to view command proment" />
 
+
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <button className="button-8" role="button" >
+
+                        <img src={CMDIcon} alt="star" className="CMDIcon" onClick={togglePopup} title="Click to view command proment" />
+
+                    </button>
                 </div>
+
                 <div className="flex flex-wrap justify-center">
 
                     <div className="topsectioncustom">

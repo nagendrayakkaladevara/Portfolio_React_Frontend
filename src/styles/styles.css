@@ -39,6 +39,16 @@
     color: #F0F3FF;
 }
 
+.CMDSection {
+    width: 40%;
+    height: 200px;
+}
+
+.MACSection {
+    width: 40%;
+    height: 200px;
+}
+
 .articalBlockCustom {
     width: auto;
     height: 350px;
@@ -70,6 +80,8 @@
 .topsectioncustom {
     width: 60%;
 }
+
+
 
 .UXBlockCustom {
     width: 90%;
@@ -126,6 +138,10 @@
 .detailsSections {
     color: white;
     font-size: 15px;
+}
+
+.CMDImage {
+    width: 25%;
 }
 
 .companytitle {
@@ -425,6 +441,7 @@ input:checked+.toggle-slider:before {
     justify-content: center;
     align-items: center;
     margin-top: -20px;
+    z-index: 100;
 }
 
 .popup-content {
@@ -485,7 +502,7 @@ input:checked+.toggle-slider:before {
 }
 
 .command-interface {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 410px;
     padding: 10px 5px 0px 5px;
 }
@@ -503,7 +520,7 @@ input:checked+.toggle-slider:before {
     background: #888;
     border-radius: 6px;
 }
- 
+
 .command-interface::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -696,4 +713,86 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
     background-color: #435334;
+}
+
+
+
+/* ----------------- */
+
+/* CSS */
+.button-8 {
+    background-color: #e1ecf4;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #39739d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+
+.button-8:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+}
+
+
+
+/* src/Terminal.css */
+.terminal {
+    background-color: #000;
+    color: #0f0;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.terminal-output {
+    margin-bottom: 10px;
+}
+
+.terminal-command {
+    margin: 0;
+}
+
+.terminal-response {
+    margin: 0 0 10px 20px;
+}
+
+.terminal-input {
+    width: 100%;
+    border: none;
+    background: none;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    outline: none;
 }
