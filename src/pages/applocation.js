@@ -86,7 +86,7 @@ const Application = () => {
               
 
                 <Popup isOpen={isOpen} togglePopup={togglePopup} />
-                <p className="m-10 text-xs sm:text-xl  justify-center items-center gap-1 flex-wrap" style={{ color: "#F0F3FF" }}>{IntroMessage}</p>
+                <p className="m-10 text-xs sm:text-xl  justify-center items-center gap-1 flex-wrap text-justify" style={{ color: "#F0F3FF" }}>{IntroMessage}</p>
 
 
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>

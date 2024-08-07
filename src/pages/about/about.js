@@ -27,6 +27,7 @@ import Bootstrap from '../../asserts/images/bootstrapicon.png';
 import GitTea from '../../asserts/images/Gitea_Logo.png';
 import GoogleIDX from '../../asserts/images/googleidx.png';
 import AWSIcon from '../../asserts/images/awsicon-removebg-preview.png';
+import NPMIcon from '../../asserts/images/Npm-logo.png'
 
 import '../../styles/styles.css';
 
@@ -109,9 +110,12 @@ const About = () => {
         }, {
             "icon": MongodbIcon,
             "title": "Mongodb"
-        },{
+        }, {
             "icon": AWSIcon,
             "title": "AWS"
+        }, {
+            "icon": NPMIcon,
+            "title": "NPM Packages"
         }
     ]
 
@@ -163,7 +167,7 @@ const About = () => {
             "title": "Photography",
             "rating": 3,
             "unrated": 2
-        }, 
+        },
         // {
         //     "title": "Reading Books",
         //     "rating": 2,
