@@ -26,6 +26,7 @@ import PrimeReact from '../../asserts/images/primereact-logo.png';
 import Bootstrap from '../../asserts/images/bootstrapicon.png';
 import GitTea from '../../asserts/images/Gitea_Logo.png';
 import GoogleIDX from '../../asserts/images/googleidx.png';
+import AWSIcon from '../../asserts/images/awsicon-removebg-preview.png';
 
 import '../../styles/styles.css';
 
@@ -108,7 +109,10 @@ const About = () => {
         }, {
             "icon": MongodbIcon,
             "title": "Mongodb"
-        },
+        },{
+            "icon": AWSIcon,
+            "title": "AWS"
+        }
     ]
 
     const IDEData = [
@@ -121,10 +125,10 @@ const About = () => {
         //     "icon": SpringBootIcon,
         //     "title": "Spring Tool Suite"
         // },
-        {
-            "icon": IntiljIonc,
-            "title": "intellij"
-        },
+        // {
+        //     "icon": IntiljIonc,
+        //     "title": "intellij"
+        // },
         {
             "icon": GoogleIDX,
             "title": "Google IDX"
@@ -159,11 +163,12 @@ const About = () => {
             "title": "Photography",
             "rating": 3,
             "unrated": 2
-        }, {
-            "title": "Reading Books",
-            "rating": 2,
-            "unrated": 3
-        }
+        }, 
+        // {
+        //     "title": "Reading Books",
+        //     "rating": 2,
+        //     "unrated": 3
+        // }
     ]
 
     const VersionControls = [

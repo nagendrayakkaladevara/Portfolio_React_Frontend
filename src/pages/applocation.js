@@ -22,7 +22,17 @@ import { Button } from "primereact/button";
 import Terminal from "../components/terminal";
 
 const Application = () => {
-    const IntroMessage = 'My passion lies in crafting engaging, accessible, and user-centric experiences that leave a lasting impact.';
+    // const IntroMessage = 'My passion lies in crafting engaging, accessible, and user-centric experiences that leave a lasting impact.';
+    // const IntroMessage = '2.5 years of professional experience as a Frontend Engineer, I have honed my skills in both front-end and back-end development. I have a proven track record of leading cross-functional teams to deliver high-quality software solutions.'
+
+    const IntroMessage = (
+        <>
+            2.5 years of professional experience as a Frontend Engineer, I have honed my skills in both
+            <span className="highlight text-xs sm:text-xl"> front-end</span> and <span className="highlight text-xs sm:text-xl"> back-end</span> development. I have a proven track record of leading
+            cross-functional teams to deliver high-quality software solutions.
+        </>
+    );
+
     const [isOpen, setIsOpen] = useState(false); // CMD POPUP State
 
     useEffect(() => {
@@ -73,22 +83,10 @@ const Application = () => {
                 </div>
 
 
-                <div className="flex justify-around" style={{ alignItems: 'center' }}>
-                    <picture title="Support LGBTQ+ individuals and reject discrimination against them; all people are equal _ Nagendra">
-                        <source srcSet="https://fonts.gstatic.com/s/e/notoemoji/latest/1f308/512.webp" type="image/webp" />
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f308/512.gif" alt="🌈" width="52" height="52" />
-                        <p style={{ color: '#E1F0DA', fontSize: '8px' }}>LGBTQ+</p>
-                    </picture>
-
-                    <picture title="Please water plants _ Nagendra">
-                        <source srcSet="https://fonts.gstatic.com/s/e/notoemoji/latest/1f331/512.webp" type="image/webp" />
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f331/512.gif" alt="🌱" width="52" height="52" />
-                        {/* <p style={{ color: '#E1F0DA', fontSize: '8px' }}>Water Plant</p> */}
-                    </picture>
-                </div>
+              
 
                 <Popup isOpen={isOpen} togglePopup={togglePopup} />
-                <p className="m-10 text-xs sm:text-xl flex justify-center flex-wrap" style={{ color: "#F0F3FF" }}>{IntroMessage}</p>
+                <p className="m-10 text-xs sm:text-xl  justify-center items-center gap-1 flex-wrap" style={{ color: "#F0F3FF" }}>{IntroMessage}</p>
 
 
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -104,13 +102,13 @@ const Application = () => {
                     <div className="topsectioncustom">
                         <Link to='/articlesAndresources'>
                             <div className="articalBlockCustom rounded-2xl p-3 m-4 overflow-hidden shadow-pop-br">
-                                <p className="flex justify-end m-2">Articles & resources</p>
+                                <p className="flex justify-end m-2">Articles and resources I follow.</p>
                                 <img src={ArticalscreenImage} alt="" className="articalBlockImageCustom" />
                             </div>
                         </Link>
                         <Link to='/brandingvalues'>
                             <div className="brandingBlockCustom rounded-2xl p-3 m-4 overflow-hidden shadow-pop-br">
-                                <p className="flex justify-end m-2">Branding values</p>
+                                <p className="flex justify-end m-2">Core priorities I follow for branding values.</p>
                                 <div className="flex justify-center">
                                     <img src={brandingScreenImage} alt="" className="brandingBlockImageCustom " />
                                 </div>
@@ -130,7 +128,7 @@ const Application = () => {
                 <div className="flex justify-center">
                     <div className="UXBlockCustom rounded-2xl p-3 m-4 overflow-hidden shadow-pop-br">
                         <Link to='/psdtohtml'>
-                            <p className="flex justify-end m-2" style={{ fontSize: "25px" }}>Wireframe to User Interface</p>
+                            <p className="flex justify-end m-2" >Wireframe to User Interface Development.</p>
                             <div className="flex justify-center">
                                 <img src={UXScreenImage} alt="" className="UXBlockImageCustom" />
                             </div>
