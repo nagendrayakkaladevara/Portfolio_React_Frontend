@@ -27,8 +27,7 @@ const Application = () => {
 
     const IntroMessage = (
         <>
-            2.5 years of professional experience as a Frontend Engineer, I have honed my skills in both
-            <span className="highlight text-xs sm:text-xl"> front-end</span> and <span className="highlight text-xs sm:text-xl"> back-end</span> development. I have a proven track record of leading
+            2.5 years of professional experience as a Frontend Engineer, I have honed my skills in both <span className="highlight text-xs sm:text-xl">front-end</span> and <span className="highlight text-xs sm:text-xl">back-end</span> development. I have a proven track record of leading
             cross-functional teams to deliver high-quality software solutions.
         </>
     );

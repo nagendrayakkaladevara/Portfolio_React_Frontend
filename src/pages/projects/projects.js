@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Technologys from "../../components/technologys";
 import {
     BrowserRouter as Router,
@@ -72,10 +72,10 @@ const Projects = () => {
         },
         {
             title: "Prodapt university Portal",
-            techUsed: ["html", "css", "typescript", "react", "sharepoint", 'svn'],
+            techUsed: ["html", "css", "typescript", "react", "sharepoint", "expressjs", 'mangodb', 'svn',],
             description: "Prodapt University Portal is a dynamic web application built using React and TypeScript, designed to efficiently manage student training records. Resembling the functionality of Microsoft Excel, it offers a user-friendly interface where administrators can seamlessly edit cells in real-time, ensuring instant updates and smooth data management. With its intuitive design and robust features, Prodapt University Portal streamlines the process of overseeing student progress and facilitates efficient record-keeping within training programs.",
             active: "yes",
-            myrole: "Front end Lead"
+            myrole: "Full Stack Developer"
         }, {
             title: "PivotComm",
             techUsed: ["html", "css", "typescript", "react", "sharepoint", 'svn'],
@@ -176,9 +176,32 @@ const Projects = () => {
     //     }
     // ]
 
+    // const toast = useRef(null);
+    // const [hasShownToast, setHasShownToast] = useState(false);
+
+    // const showWarn = () => {
+    //     toast.current.show({
+    //         severity: 'warn',
+    //         summary: 'Info',
+    //         detail: 'Project links provided in this portfolio are for demonstration purposes only.',
+    //         life: 3000
+    //     });
+    // };
+
+    // useEffect(() => {
+    //     if (!hasShownToast) {
+    //         showWarn();
+    //         setHasShownToast(true);
+    //     }
+    // }, [hasShownToast]);
+
+    // useEffect(() => {
+    //     alert('Info: Project links provided in this portfolio are for demonstration purposes only.')
+    // }, [])
+
     return (
         <>
-            <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10 focus-in-expand ' style={{ color: "#BFD8AF" }}>Projects.</p>
+            <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10  ' style={{ color: "#BFD8AF" }}>Projects.</p>
             <section id="section-projects">
                 <div className='flex justify-center items-center gap-4'>
                     <p style={{ color: "#BFD8AF" }}>Corporate projects</p>
@@ -189,27 +212,29 @@ const Projects = () => {
                     <p style={{ color: "#BFD8AF" }}>Personal projects</p>
                 </div>
             </section>
+            {/* <Toast ref={toast} /> */}
+            {/* <p style={{ display: "flex", justifyContent: 'center', color:"#F8EDE3" , padding:"15px"}}>Project links provided in this portfolio are for demonstration purposes only.</p> */}
             {!isToggled ? (<>
                 <div>
                     {Data.map((item, index) => (
                         item.active === "yes" && (
-                            <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : "shadow-pop-br"} projectsbackground`} style={{ backgroundColor: "#BFEA7C", borderRadius: "20px" }}>
-                                <div className='flex items-center focus-in-expand'>
+                            <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : "shadow-pop-br"} projectsbackground`} style={{ backgroundColor: "#BFEA7C" }}>
+                                <div className='flex items-center '>
                                     <p className='ProjectTitle'>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <p className='ProjectTitle focus-in-expand'>Contributed Technologies:</p>
+                                    <p className='ProjectTitle '>Contributed Technologies:</p>
                                     <Technologys data={item.techUsed} titleColor={"#416D19"} />
                                 </div>
                                 <div>
-                                    <p className='ProjectTitle focus-in-expand'>My Role: </p>
-                                    <p className='ProjectTitleName focus-in-expand'>{item.myrole}</p>
+                                    <p className='ProjectTitle '>My Role: </p>
+                                    <p className='ProjectTitleName '>{item.myrole}</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <p className='ProjectTitle focus-in-expand'>Description: </p>
-                                    <p className='ProjectTitleName focus-in-expand'>{item.description}</p>
+                                    <p className='ProjectTitle '>Description: </p>
+                                    <p className='ProjectTitleName '>{item.description}</p>
                                 </div>
                             </div>
                         )
@@ -220,22 +245,22 @@ const Projects = () => {
                     {DataPersonal.map((item, index) => (
                         item.active === "yes" && (
                             <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : "shadow-pop-br"} projectsbackground`} >
-                                <div className={`flex items-center ${!isToggled ? "" : "focus-in-expand"}`}>
+                                <div className={`flex items-center ${!isToggled ? "" : ""}`}>
                                     <p className='ProjectTitle'>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <p className={`ProjectTitle focus-in-expand  ${!isToggled ? "" : "focus-in-expand"}`}>Technologies used:</p>
+                                    <p className={`ProjectTitle   ${!isToggled ? "" : ""}`}>Technologies used:</p>
                                     <Technologys data={item.techUsed} titleColor={"#416D19"} />
                                 </div>
                                 <div>
-                                    {/* <p className='ProjectTitle focus-in-expand'>My Role: </p> */}
-                                    <a className='ProjectTitleName focus-in-expand' href={item.link}>{item.link}</a>
+                                    {/* <p className='ProjectTitle '>My Role: </p> */}
+                                    <a className='ProjectTitleName ' href={item.link}  style={{ color: "blue", textDecoration: "underline" }}>{item.link}</a>
                                 </div>
                                 <br />
                                 <div>
-                                    <p className='ProjectTitle focus-in-expand'>Description: </p>
-                                    <p className='Projectdescription focus-in-expand' style={{ textAlign: "justify" }}>{item.description}<Link to={`/project/${item.projects}`} style={{ color: "#687EFF" }}>read more</Link></p>
+                                    <p className='ProjectTitle '>Description: </p>
+                                    <p className='Projectdescription ' style={{ textAlign: "justify" }}>{item.description}<Link to={`/project/${item.projects}`} style={{ color: "#687EFF" }}>read more</Link></p>
                                 </div>
                             </div>
                         )

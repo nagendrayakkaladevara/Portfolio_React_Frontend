@@ -192,24 +192,24 @@ const About = () => {
 
     return (
         <>
-            <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10 focus-in-expand ' style={{ color: "#BFD8AF" }}>I&apos;m Nagendra.</p>
+            <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10 ' style={{ color: "#BFD8AF" }}>I&apos;m Nagendra.</p>
             <div className='flex justify-around'>
                 <div className='flex justify-around flex-row' style={{ width: "50%" }}>
                     <img src={ProfilePicture} alt='Profile picture' className='profilepicturecustom shadow-drop-bl' />
                 </div>
                 <div className='flex justify-around flex-col' style={{ width: "50%" }}>
-                    <p className='flex justify-start items-center myIntoText focus-in-expand-fwd' style={{ color: "#BFD8AF" }}>I&apos;m a web developer working remotely from the City of Destiny, India.</p>
+                    <p className='flex justify-start items-center myIntoText ' style={{ color: "#BFD8AF" }}>I&apos;m a web developer working remotely from the City of Destiny, India.</p>
 
                 </div>
 
             </div>
-            <div className='introsectioncustom m-10 text-justify focus-in-expand'>
+            <div className='introsectioncustom m-10 text-justify '>
                 <p>I have an insatiable curiosity that drives me to constantly seek knowledge and growth. Whether it&apos;s staying ahead of industry trends, mastering new technologies, or exploring innovative solutions, what makes coding truly special is its power to bring ideas to life. It&apos;s a creative outlet where innovation knows no bounds. It&apos;s where I get to turn imagination into reality.</p>
                 <br />
                 <p>Over the past two years, I have immersed myself in the web development industry, eagerly embracing new technologies and methodologies. I pride myself on being the kind of person who upholds loyalty and honesty, values that contribute to fostering a healthy and positive environment within the organization.</p>
             </div>
 
-            <div className='flex justify-evenly flex-wrap focus-in-expand-fwd'>
+            <div className='flex justify-evenly flex-wrap '>
                 <section id="section-about">
                     <div className='m-5 p-5 workexperiencesection shadow-pop-brConstent' style={{ background: "#2d483f", borderRadius: "15px" }}>
                         <p className='workexprenceheading'>Corporate Work Experience</p>
@@ -245,7 +245,7 @@ const About = () => {
             </div>
             <section id="section-Technologies">
                 <p className='TechnologiesHeading'>Technologies</p>
-                <div className='flex gap-5 flex-wrap justify-evenly'>
+                <div className='flex gap-5 flex-wrap justify-evenly' style={{ padding: "0px 10px" }}>
                     {data.map((item, index) => (
                         <div key={index} className='flex gap-3 items-center techblur p-5'>
                             <p style={{ fontSize: "20px", color: 'white' }}>{item.title}</p>

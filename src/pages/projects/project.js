@@ -5,6 +5,38 @@ import Technologys from "../../components/technologys";
 
 export const DataPersonal = [
     {
+        title: "ReUseReact UI (under development)",
+        techUsed: ["html", "css", "typescript", 'tailwind', "react", 'github'],
+        description: "The ReUseReact UI Snippet Library is designed to streamline the development process for React developers by providing ready-to-use code snippets for common reusable components. This project addresses the frequent need to create components like buttons and input fields from scratch, allowing developers to focus on building their applications rather than reinventing the wheel.",
+        active: "yes",
+        link: "https://github.com/nagendrayakkaladevara/railwaypayment-app-frontend-vite-react-typscript",
+        projects: 'ReUseReactUI',
+        keypoints: [
+            { "sideHeading": "No Additional Dependencies", "keypoint": "Users can integrate these snippets without the hassle of installing extra libraries, ensuring a lightweight and efficient development experience." },
+            { "sideHeading": "Reusable Code Snippets", "keypoint": "The library offers a comprehensive collection of code snippets for essential React components, enabling developers to quickly copy and paste code directly into their projects." },
+            { "sideHeading": "Customization Flexibility", "keypoint": "While the snippets are ready to use, developers have the flexibility to modify components according to their project requirements, promoting creativity and adaptability." },
+            { "sideHeading": "Tailwind CSS Integration", "keypoint": "The project includes snippets that utilize Tailwind CSS, allowing developers to leverage utility-first styling for their components effortlessly." },
+            { "sideHeading": "Benefits", "keypoint": "This project significantly reduces the time and effort required for component development in React, making it an invaluable resource for developers of all skill levels. By providing a straightforward way to access and customize reusable components, the ReUseReact UI Library empowers developers to enhance their productivity and focus on delivering high-quality applications." }
+        ],
+        conclusion: 'This project is aimed at React developers looking for a quick and efficient way to implement common components in their projects, whether they are beginners seeking guidance or experienced developers looking to save time.'
+    },
+    {
+        title: "Railway Welfare Fund Tracker Application - Backend",
+        techUsed: ["expressjs", 'mangodb', 'github'],
+        description: "The Railway Welfare Fund Tracker is a application to keep track of the welfare funds i have developed backend application designed to efficiently manage and monitor the railway welfare fund and associated payments for each year. Built with Express and MongoDB, this application ensures secure and reliable handling of data related to welfare initiatives.",
+        active: "yes",
+        link: "https://github.com/nagendrayakkaladevara/payment-details-railwayapplication-backend",
+        projects: 'ReUseReactUI',
+        keypoints: [
+            { "sideHeading": "Express Framework", "keypoint": "Leveraging the robust capabilities of Express.js, the application provides a RESTful API for seamless interactions and data retrieval." },
+            { "sideHeading": "Zod Validation", "keypoint": "mplements Zod for data validation, ensuring that incoming data is thoroughly checked and meets specified criteria before processing. This enhances the application's reliability and security." },
+            { "sideHeading": "Authentication Middleware", "keypoint": " Incorporates middleware for user authentication, safeguarding sensitive data and ensuring that only authorized personnel can access specific functionalities." },
+            { "sideHeading": "Efficient Application Structure", "keypoint": "The project is organized using a clear architecture, with distinct layers for controllers, routers, and models. This modular approach promotes maintainability and scalability." },
+            { "sideHeading": "Database Configuration", "keypoint": "Includes a configuration module for database connections, simplifying the setup process and enabling easy adjustments as needed" }
+        ],
+        conclusion: 'The Railway Welfare Fund Tracker is intended for railway administration and financial departments seeking an effective way to manage welfare funds and streamline payment processes. It can also serve as a valuable resource for developers interested in best practices for building secure and maintainable backend applications.'
+    },
+    {
         title: "ECoRSU App",
         techUsed: ["html", "css", "javascript", "react", "expressjs", 'mangodb', 'firebase', 'github'],
         description: "The Indian Railway Shramik Union (ECoRSU) Digital Phone Diary project is a comprehensive solution tailored for mobile users, designed to enhance communication and organization within the Indian Railway waltair division. Leveraging modern web technologies, this project seamlessly integrates React, Express.js, MongoDB, Vercel for backend deployment, and Netlify for frontend deployment, ensuring a smooth and efficient user experience.",
@@ -16,10 +48,10 @@ export const DataPersonal = [
             { "sideHeading": "Dark & Light Mode Toggle", "keypoint": "Enhancing user experience, this project offers the flexibility to switch between dark and light modes, catering to different preferences and environments." },
             { "sideHeading": "Excel Download Functionality", "keypoint": "Users can conveniently download data in Excel format, facilitating easy access and management of information." },
             { "sideHeading": "Calling Feature", "keypoint": "Seamlessly integrated with the user's device, the calling feature enables direct phone calls, promoting efficient communication within the community." },
-            { "sideHeading": "News   Updates Section", "keypoint": "Stay informed with the latest news, announcements, and updates relevant to the Indian Railway Shramik Union community, ensuring members are always up-to-date with relevant information." }
+            { "sideHeading": "News Updates Section", "keypoint": "Stay informed with the latest news, announcements, and updates relevant to the Indian Railway Shramik Union community, ensuring members are always up-to-date with relevant information." }
         ],
         conclusion: 'This project serves as a digital hub for members of the Indian Railway Shramik Union, offering a centralized platform for communication, organization, and access to essential resources. With its user-friendly interface and innovative features, it aims to streamline processes and enhance connectivity within the community.'
-    },{
+    }, {
         title: "Admin ECoRSU",
         techUsed: ["html", "css", "javascript", "react", "expressjs", 'mangodb', 'firebase', 'github'],
         description: "The ECoRSU Management Application is a dynamic web-based solution developed using React, Express.js, MongoDB, and Firebase OTP authentication, deployed with Vercel for backend and Netlify for frontend. This application is designed to streamline the management of the ECoRSU (Indian Railway Shramik Union) app, catering to a select group of users who are authenticated via OTP for secure access.",
@@ -52,10 +84,10 @@ export const DataPersonal = [
     }, {
         title: "Telugu Tribune",
         techUsed: ["html", "css", "javascript", "react"],
-        description: "Developed a responsive landing page for [Company Name] aimed at enhancing brand visibility and driving customer engagement. The project involved creating a user-friendly interface with intuitive navigation.",
+        description: "Developed a responsive landing page for Telugu Tribune aimed at enhancing brand visibility. The project involved creating a user-friendly interface with intuitive navigation.",
         active: "yes",
         link: "https://telugutribune.netlify.app/",
-        projects: 'TeluguTribune', 
+        projects: 'TeluguTribune',
         keypoints: [
             { "sideHeading": "Responsive Design", "keypoint": "Ensured optimal viewing experience across various devices, including mobile, tablet, and desktop." },
             { "sideHeading": "Unique Design", "keypoint": "Enhancing user experience, this project offers the unique design." },
@@ -64,7 +96,7 @@ export const DataPersonal = [
             // { "sideHeading": "News   Updates Section", "keypoint": "Stay informed with the latest news, announcements, and updates relevant to the Indian Railway Shramik Union community, ensuring members are always up-to-date with relevant information." }
         ],
         conclusion: 'This project showcases my ability to blend technical skills with creative design to deliver an effective marketing solution.'
-    } ,{
+    }, {
         title: "Weather Finder",
         techUsed: ["html", "css", "javascript", "react"],
         description: "Weather Finder is an innovative web application built using React and deployed on Netlify. Leveraging the power of Google Maps APIs for location services and search functionality, as well as weather APIs for real-time weather updates, Weather Finder provides users with accurate weather information based on their current location or specified search queries.",
@@ -114,33 +146,32 @@ const Project = () => {
         console.log(projectName, "productId");
     }, [projectName]);
 
-    
-
+    // this is personal project detail view file 
 
     return (
         <>
             {projectData && (
                 <>
                     <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10 focus-in-expand ' style={{ color: "#BFD8AF" }}>{projectData.title}</p>
-                    <a href={projectData.link} target='_black' className='flex justify-center projectLink' >{projectData.link}</a>
+                    <a href={projectData.link} target='_black' className='flex justify-center projectLink' style={{ color: "blue", textDecoration: "underline" }}>{projectData.link}</a>
                     <p className='TechnologiesHeading'>Technologies Used:</p>
                     <Technologys data={projectData.techUsed} titleColor={"white"} />
                     <p className='TechnologiesHeading'>Project Description:</p>
                     <div className='m-5'>
-                        <p className='Projectdescription focus-in-expand' style={{ color: "white", textAlign: "justify", fontWeight: "100" }}>{projectData.description}</p>
+                        <p className='Projectdescription ' style={{ color: "white", textAlign: "justify", fontWeight: "100" }}>{projectData.description}</p>
                     </div>
-                    <p className='TechnologiesHeading focus-in-expand'>Key Points:</p>
+                    <p className='TechnologiesHeading '>Key Points:</p>
                     <div className='m-5'>
                         {projectData.keypoints.map((keypoint, index) => (
                             <div key={index} style={{ margin: "20px 0px" }}>
-                                <p className='Projectdescription focus-in-expand projectdecriptionkeypoints'>{keypoint.sideHeading}:</p>
-                                <p className='Projectdescription focus-in-expand' style={{ color: "white", textAlign: "justify", fontWeight: "100" }}>{keypoint.keypoint}</p>
+                                <p className='Projectdescription  projectdecriptionkeypoints'>{keypoint.sideHeading}:</p>
+                                <p className='Projectdescription ' style={{ color: "white", textAlign: "justify", fontWeight: "100" }}>{keypoint.keypoint}</p>
                             </div>
                         ))}
                     </div>
                     <p className='TechnologiesHeading'>Conclusion :</p>
                     <div className='m-5'>
-                        <p className='Projectdescription focus-in-expand' style={{ color: "white", textAlign: "justify", fontWeight: "100" }}>{projectData.conclusion}</p>
+                        <p className='Projectdescription ' style={{ color: "white", textAlign: "justify", fontWeight: "100" }}>{projectData.conclusion}</p>
                     </div>
                 </>
             )}

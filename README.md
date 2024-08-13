@@ -28,3 +28,6 @@ Explore my work and see how I leverage these technologies to deliver exceptional
 - React
 - React Router
 - CSS for styling
+- tailwind css
+- express as backend 
+- mongodb for database
