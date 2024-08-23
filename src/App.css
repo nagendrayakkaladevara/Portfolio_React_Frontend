@@ -640,3 +640,8 @@ scrollbar-thumb:hover {
   background: linear-gradient(to right, #FEF3E2, #DEAC80);
   border-radius: 10px;
 }
+
+.link-container {
+  word-wrap: break-word;
+  max-width: 100%; /* Adjust as necessary */
+}

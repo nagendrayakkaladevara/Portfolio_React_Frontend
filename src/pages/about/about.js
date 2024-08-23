@@ -227,21 +227,22 @@ const About = () => {
                         </div>
                     </div>
                 </section>
-                <div className='m-5 p-5 educationsection shadow-pop-brConstent' style={{ background: "#2d483f", borderRadius: "15px" }}>
-                    <p className='workexprenceheading'>Education</p>
-                    <p className='areatitle'>Graduation</p>
-                    <p className='institute'>Gayatri Vidya Parishad(A) - Vizag</p>
-                    <p className='year'>2017-2021</p>
-                    <br />
-                    <p className='areatitle'>Intermediate</p>
-                    <p className='institute'>Sasi Junior College - Velivennu</p>
-                    <p className='year'>2015-2017</p>
-                    <br />
-                    <p className='areatitle'>Secondary School Certificate (SSC)</p>
-                    <p className='institute'>Bhashyam Public School - Vizag</p>
-                    <p className='year'>2015</p>
-                </div>
-
+                <section id="">
+                    <div className='m-5 p-5 educationsection shadow-pop-brConstent' style={{ background: "#2d483f", borderRadius: "15px" }}>
+                        <p className='workexprenceheading'>Education</p>
+                        <p className='areatitle'>Graduation</p>
+                        <p className='institute'>Gayatri Vidya Parishad(A) - Vizag</p>
+                        <p className='year'>2017-2021</p>
+                        <br />
+                        <p className='areatitle'>Intermediate</p>
+                        <p className='institute'>Sasi Junior College - Velivennu</p>
+                        <p className='year'>2015-2017</p>
+                        <br />
+                        <p className='areatitle'>Secondary School Certificate (SSC)</p>
+                        <p className='institute'>Bhashyam Public School - Vizag</p>
+                        <p className='year'>2015</p>
+                    </div>
+                </section>
             </div>
             <section id="section-Technologies">
                 <p className='TechnologiesHeading'>Technologies</p>

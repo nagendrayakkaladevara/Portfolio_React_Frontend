@@ -15,19 +15,20 @@ import GitHubIcon from '../asserts/images/githubicon.png';
 import SVNIcon from '../asserts/images/svnicon.png';
 import TailwindIcon from '../asserts/images/tailwindicon.png';
 import DasiyUI from '../asserts/images/dasisyuiicon.png';
+import NPMIcon from '../asserts/images/Npm-logo.png';
 
 const Technologys = ({ data, titleColor }) => {
     const Tech = [
         {
             "html": {
                 icon: HtmlIcon,
-                title: "HTML 5",
+                title: "HTML",
             },
         },
         {
             "css": {
                 icon: CssIcon,
-                title: "CSS 3",
+                title: "CSS",
             },
         }, {
             "tailwind": {
@@ -77,7 +78,7 @@ const Technologys = ({ data, titleColor }) => {
         }, {
             'typescript': {
                 icon: TypescriptIcon,
-                title: "Typescript ",
+                title: "Typescript",
             },
         }, {
             'sharepoint': {
@@ -98,6 +99,11 @@ const Technologys = ({ data, titleColor }) => {
             "github": {
                 icon: GitHubIcon,
                 title: "Github",
+            },
+        }, {
+            "npm": {
+                icon: NPMIcon,
+                title: "NPM",
             },
         }
     ];

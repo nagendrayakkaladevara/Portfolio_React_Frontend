@@ -253,9 +253,11 @@ const Projects = () => {
                                     <p className={`ProjectTitle   ${!isToggled ? "" : ""}`}>Technologies used:</p>
                                     <Technologys data={item.techUsed} titleColor={"#416D19"} />
                                 </div>
-                                <div>
-                                    {/* <p className='ProjectTitle '>My Role: </p> */}
-                                    <a className='ProjectTitleName ' href={item.link}  style={{ color: "blue", textDecoration: "underline" }}>{item.link}</a>
+                                <div className="link-container">
+                                    <span>
+                                        {/* <p className='ProjectTitle '>My Role: </p> */}
+                                        <a className='ProjectTitleName' target="_blank" href={item.link} style={{ color: "blue", textDecoration: "underline", fontSize: "12px" }}>{item.link}</a>
+                                    </span>
                                 </div>
                                 <br />
                                 <div>
