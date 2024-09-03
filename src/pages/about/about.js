@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProfilePicture from '../../asserts/images/profilepicture.jpg';
 import ProdaptLogo from '../../asserts/images/prodaptlgoo.png';
 import ReactIcon from '../../asserts/images/reacticon.png';
-import NextjsIcon from '../../asserts/images/nextjsIcon.png';
+import NextjsIcon from '../../asserts/images/nextjswhitelogo-removebg-preview.png';
 import HtmlIcon from '../../asserts/images/htmlicon.png';
 import CssIcon from '../../asserts/images/cssicon.png';
 import JavaScriptIcon from '../../asserts/svgs/javascript.svg';
@@ -27,7 +27,8 @@ import Bootstrap from '../../asserts/images/bootstrapicon.png';
 import GitTea from '../../asserts/images/Gitea_Logo.png';
 import GoogleIDX from '../../asserts/images/googleidx.png';
 import AWSIcon from '../../asserts/images/awsicon-removebg-preview.png';
-import NPMIcon from '../../asserts/images/Npm-logo.png'
+import NPMIcon from '../../asserts/images/Npm-logo.png';
+import GitHubWhiteLogo from '../../asserts/images/githubwhitelogo-removebg-preview.png';
 
 import '../../styles/styles.css';
 
@@ -181,7 +182,7 @@ const About = () => {
             "name": 'SVN',
         },
         {
-            "title": GitHubIcon,
+            "title": GitHubWhiteLogo,
             "name": "Github",
         },
         {
