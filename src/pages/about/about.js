@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ProfilePicture from '../../asserts/images/profilepicture.jpg';
 import ProdaptLogo from '../../asserts/images/prodaptlgoo.png';
 import ReactIcon from '../../asserts/images/reacticon.png';
@@ -190,6 +190,34 @@ const About = () => {
         }
     ]
 
+
+    const [gitData, setGitData] = useState(null);
+    console.log("🚀 ~ About ~ gitData:", gitData)
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+
+        const apiUrl = 'https://api.github.com/users/nagendrayakkaladevara';
+
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                setGitData(data);
+                setLoading(false);
+            })
+            .catch(error => {
+                setError(error);
+                setLoading(false);
+            });
+    }, []);
+
+
     return (
         <>
             <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10 ' style={{ color: "#BFD8AF" }}>I&apos;m Nagendra.</p>
@@ -272,6 +300,32 @@ const About = () => {
                         <img src={item.title} alt={`${item.title} icon`} style={{ width: '50px', height: "auto" }} />
                     </div>
                 ))}
+            </div>
+            <p className='TechnologiesHeading flex justify-center'>GitHub Profile</p>
+
+            {/* <a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                <p className="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </a> */}
+            <div className="techblur p-2 m-5 text-white">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+                    <img src={gitData.avatar_url} style={{ width: "150px", height: "150px", borderRadius: "50%" }} />
+                    <div>
+                        <div className="block p-2">
+                        <p>GitHub Id: {gitData.login}</p>
+                        <p>No of Public Repo's: {gitData.public_repos}</p>
+                        <p>No of Public Gists: {gitData.public_repos}</p>
+                        </div>
+                       
+                        <button type="button" className="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2">
+                            <a href="https://github.com/nagendrayakkaladevara" target="_black">Profile</a>
+                        </button>
+                        {/* <button type="button" className="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2">
+                            <a href="https://api.github.com/users/nagendrayakkaladevara/repos" target="_blank">Repo's</a>
+                        </button> */}
+                    </div>
+                </div>
             </div>
             <section id="section-Hobbies">
                 <p className='TechnologiesHeading flex justify-center'>Hobbies</p>
