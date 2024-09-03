@@ -20,7 +20,8 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to right, #436850, #233831);
+  /* background: linear-gradient(to right, #436850, #233831); */
+  background: black;
   backdrop-filter: blur(10px);
   /* background-color: #233831; */
   /* background: linear-gradient(to bottom,

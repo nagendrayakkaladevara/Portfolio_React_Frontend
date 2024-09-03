@@ -310,12 +310,12 @@ const About = () => {
             </a> */}
             <div className="techblur p-2 m-5 text-white">
                 <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-                    <img src={gitData.avatar_url} style={{ width: "150px", height: "150px", borderRadius: "50%" }} />
+                    <img src={gitData?.avatar_url} style={{ width: "150px", height: "150px", borderRadius: "50%" }} />
                     <div>
                         <div className="block p-2">
-                        <p>GitHub Id: {gitData.login}</p>
-                        <p>No of Public Repo's: {gitData.public_repos}</p>
-                        <p>No of Public Gists: {gitData.public_repos}</p>
+                        <p>GitHub Id: {gitData?.login}</p>
+                        <p>No of Public Repo's: {gitData?.public_repos}</p>
+                        <p>No of Public Gists: {gitData?.public_repos}</p>
                         </div>
                        
                         <button type="button" className="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2">
