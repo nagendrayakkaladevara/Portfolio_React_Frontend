@@ -10,6 +10,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url('https://cur.cursors-4u.net/nature/nat-1/nat95.cur'), auto;
+  cursor: url('https://cur.cursors-4u.net/holidays/hol-4/hol336.cur'), auto;
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur116.cur'), auto;
+  cursor: url("https://cur.cursors-4u.net/cursors/cur-2/cur197.ani"), url("https://cur.cursors-4u.net/cursors/cur-2/cur197.png"), auto;
+  cursor: url("https://cur.cursors-4u.net/cursors/cur-6/cur544.cur"), auto;
 }
 
 code {
