@@ -301,16 +301,17 @@ input:checked+.toggle-slider:before {
 }
 
 .ProjectTitle {
-    font-size: 20px;
-    color: #12372A;
-
-    font-weight: 900;
+    font-size: 13px;
+    /* color: #12372A; */
+    color: white;
+    /* font-weight: 900; */
 }
 
 .ProjectTitleName {
-    font-size: 20px;
-    font-weight: 900;
-    color: #416D19;
+    font-size: 13px;
+    /* font-weight: 900; */
+    /* color: #416D19; */
+    color: white;
 }
 
 
@@ -373,8 +374,8 @@ input:checked+.toggle-slider:before {
 }
 
 .Projectdescription {
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 13px;
+    /* font-weight: 900; */
     color: #416D19;
 }
 
@@ -651,11 +652,11 @@ input:checked+.toggle-slider:before {
     }
 
     .ProjectTitle {
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .ProjectTitleName {
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .blogcardtitle {
@@ -682,7 +683,7 @@ input:checked+.toggle-slider:before {
     }
 
     .Projectdescription {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .blogdiscription>p {

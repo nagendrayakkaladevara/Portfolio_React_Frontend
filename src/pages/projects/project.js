@@ -9,7 +9,8 @@ export const DataPersonal = [
         techUsed: ["html", "css", "typescript", 'tailwind', "react", 'github'],
         description: "The ReUseReact UI Snippet Library is designed to streamline the development process for React developers by providing ready-to-use code snippets for common reusable components. This project addresses the frequent need to create components like buttons and input fields from scratch, allowing developers to focus on building their applications rather than reinventing the wheel.",
         active: "yes",
-        link: "https://github.com/nagendrayakkaladevara/railwaypayment-app-frontend-vite-react-typscript",
+        demolink: "https://reusablereactui.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/ReUsableReact-UI-NextJs',
         projects: 'ReUseReactUI',
         keypoints: [
             { "sideHeading": "No Additional Dependencies", "keypoint": "Users can integrate these snippets without the hassle of installing extra libraries, ensuring a lightweight and efficient development experience." },
@@ -21,12 +22,13 @@ export const DataPersonal = [
         conclusion: 'This project is aimed at React developers looking for a quick and efficient way to implement common components in their projects, whether they are beginners seeking guidance or experienced developers looking to save time.'
     },
     {
-        title: "Railway Welfare Fund Tracker Application - Backend",
-        techUsed: ["expressjs", 'mangodb', 'github'],
+        title: "Railway Welfare Fund Tracker Application",
+        techUsed: ["html", "typescript", 'tailwind', "react", "PrimeReact", "expressjs", 'mangodb', 'github'],
         description: "The Railway Welfare Fund Tracker is a application to keep track of the welfare funds i have developed backend application designed to efficiently manage and monitor the railway welfare fund and associated payments for each year. Built with Express and MongoDB, this application ensures secure and reliable handling of data related to welfare initiatives.",
         active: "yes",
-        link: "https://github.com/nagendrayakkaladevara/payment-details-railwayapplication-backend",
-        projects: 'ReUseReactUI',
+        demolink: "https://railwaypaymentstrackingapp.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/payment-details-railwayapplication-backend',
+        projects: 'RailwayWelfareFundTrackerApplicationBackend',
         keypoints: [
             { "sideHeading": "Express Framework", "keypoint": "Leveraging the robust capabilities of Express.js, the application provides a RESTful API for seamless interactions and data retrieval." },
             { "sideHeading": "Zod Validation", "keypoint": "Implements Zod for data validation, ensuring that incoming data is thoroughly checked and meets specified criteria before processing. This enhances the application's reliability and security." },
@@ -41,8 +43,9 @@ export const DataPersonal = [
         techUsed: ["typescript"],
         description: "The React Reusable Button Package is a versatile npm package developed to simplify UI development in React applications. This package provides a customizable button component that enhances code reusability and streamlines the implementation of button elements across various projects.",
         active: "yes",
-        link: "https://www.npmjs.com/package/@nagendrayakkaladevara/react-button-component",
-        projects: 'ReUseReactUI',
+        demolink: "https://www.npmjs.com/package/@nagendrayakkaladevara/react-button-component",
+        github: 'https://github.com/nagendrayakkaladevara/NPM-React-Button',
+        projects: 'ReactReusableButtonPackage',
         keypoints: [
             { "sideHeading": "Customizable Styles", "keypoint": "The button component supports multiple styles, including primary, secondary, danger, and success, allowing developers to easily match their design preferences and branding requirements." },
             { "sideHeading": "Flexible Sizing Options:", "keypoint": "With support for different sizes (small, medium, large), the button can be adjusted to fit various use cases and UI designs." },
@@ -57,7 +60,8 @@ export const DataPersonal = [
         techUsed: ["html", "css", "javascript", "react", "expressjs", 'mangodb', 'firebase', 'github'],
         description: "The Indian Railway Shramik Union (ECoRSU) Digital Phone Diary project is a comprehensive solution tailored for mobile users, designed to enhance communication and organization within the Indian Railway waltair division. Leveraging modern web technologies, this project seamlessly integrates React, Express.js, MongoDB, Vercel for backend deployment, and Netlify for frontend deployment, ensuring a smooth and efficient user experience.",
         active: "yes",
-        link: "https://ecorsuapp.netlify.app/",
+        demolink: "https://ecorsuapp.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/ecorsuAdmin-react-app-frontend',
         projects: 'ECoRSUApp',
         keypoints: [
             { "sideHeading": "Chatbot Integration", "keypoint": "Users can engage with a chatbot feature, providing assistance and answering queries related to various aspects of the Indian Railway Shramik Union." },
@@ -72,7 +76,8 @@ export const DataPersonal = [
         techUsed: ["html", "css", "javascript", "react", "expressjs", 'mangodb', 'firebase', 'github'],
         description: "The ECoRSU Management Application is a dynamic web-based solution developed using React, Express.js, MongoDB, and Firebase OTP authentication, deployed with Vercel for backend and Netlify for frontend. This application is designed to streamline the management of the ECoRSU (Indian Railway Shramik Union) app, catering to a select group of users who are authenticated via OTP for secure access.",
         active: "yes",
-        link: "https://admin-ecorsuapp.netlify.app/",
+        demolink: "https://admin-ecorsuapp.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/ecorsuAdmin-react-app-frontend',
         projects: 'AdminECoRSU',
         keypoints: [
             { "sideHeading": "Firebase OTP Authentication", "keypoint": "Ensuring secure access, users are authenticated via OTP (One-Time Password) provided by Firebase authentication, guaranteeing a seamless and safe login experience." },
@@ -88,7 +93,8 @@ export const DataPersonal = [
         techUsed: ["nextjs", "tailwind", "typescript", "github"],
         description: "Movie Searcher is a user-friendly web application built using React and deployed on Netlify. This application enables users to search for movie details by entering the movie's title, providing them with comprehensive information about their desired films.",
         active: "yes",
-        link: "https://moviesearchappnext.netlify.app/",
+        demolink: "https://moviesearchappnext.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/Revamp-MovieApp-NextJs-TypeScipt',
         projects: 'MovieSearchApp',
         keypoints: [
             { "sideHeading": "Movie Search Functionality", "keypoint": "Users can easily search for movies by entering the movie's title into the search bar. The application then retrieves relevant movie details based on the user's input." },
@@ -103,7 +109,8 @@ export const DataPersonal = [
         techUsed: ["nextjs", "tailwind", "typescript", "github"],
         description: "Weather Finder is an innovative web application built using React and deployed on Netlify. Leveraging the power of Google Maps APIs for location services and search functionality, as well as weather APIs for real-time weather updates, Weather Finder provides users with accurate weather information based on their current location or specified search queries.",
         active: "yes",
-        link: "https://weatherapp-skytrack.netlify.app/",
+        demolink: "https://weatherapp-skytrack.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/Revamp-Weather-NextJs-TypeScipt',
         projects: 'WeatherApp',
         keypoints: [
             { "sideHeading": "Automatic Location Detection", "keypoint": "Upon opening the application, Weather Finder fetches the user's current location using the device's location services. Utilizing Google Maps APIs, it retrieves the latitude and longitude coordinates, which are then passed to the weather API to fetch the current weather conditions." },
@@ -118,7 +125,8 @@ export const DataPersonal = [
         techUsed: ["html", "tailwind", "daisyui", "javascript", "react", "expressjs", 'mangodb', 'firebase', 'github'],
         description: "Document Closet is a versatile web application developed using React, Express.js, MongoDB, and Firebase OTP authentication, deployed on Vercel for backend and Netlify for frontend. As its name suggests, Document Closet serves as a centralized repository for users to securely store and manage all their documents in one place.",
         active: "yes",
-        link: "https://documentcloset.netlify.app/",
+        demolink: "https://documentcloset.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/DocumentClosetReactFrontend',
         projects: 'DocumentCloset',
         keypoints: [
             { "sideHeading": "User Authentication", "keypoint": "Users can create an account and securely log in using Firebase OTP authentication, ensuring their documents are accessed only by authorized individuals." },
@@ -133,7 +141,8 @@ export const DataPersonal = [
         techUsed: ["html", "css", "javascript", "react"],
         description: "Developed a responsive landing page for Telugu Tribune aimed at enhancing brand visibility. The project involved creating a user-friendly interface with intuitive navigation.",
         active: "yes",
-        link: "https://telugutribune.netlify.app/",
+        demolink: "https://telugutribune.netlify.app/",
+        github: '',
         projects: 'TeluguTribune',
         keypoints: [
             { "sideHeading": "Responsive Design", "keypoint": "Ensured optimal viewing experience across various devices, including mobile, tablet, and desktop." },
@@ -148,7 +157,8 @@ export const DataPersonal = [
         techUsed: ["html", "css", "javascript", "react"],
         description: "Weather Finder is an innovative web application built using React and deployed on Netlify. Leveraging the power of Google Maps APIs for location services and search functionality, as well as weather APIs for real-time weather updates, Weather Finder provides users with accurate weather information based on their current location or specified search queries.",
         active: "yes",
-        link: "https://freakingweatherapp.netlify.app/",
+        demolink: "https://freakingweatherapp.netlify.app/",
+        github: '',
         projects: 'WeatherApp',
         keypoints: [
             { "sideHeading": "Automatic Location Detection", "keypoint": "Upon opening the application, Weather Finder fetches the user's current location using the device's location services. Utilizing Google Maps APIs, it retrieves the latitude and longitude coordinates, which are then passed to the weather API to fetch the current weather conditions." },
@@ -163,7 +173,8 @@ export const DataPersonal = [
         techUsed: ["html", "css", "javascript", "react"],
         description: "Movie Searcher is a user-friendly web application built using React and deployed on Netlify. This application enables users to search for movie details by entering the movie's title, providing them with comprehensive information about their desired films.",
         active: "yes",
-        link: "https://searchmovie123.netlify.app/",
+        demolink: "https://searchmovie123.netlify.app/",
+        github: '',
         projects: 'MovieSearchApp',
         keypoints: [
             { "sideHeading": "Movie Search Functionality", "keypoint": "Users can easily search for movies by entering the movie's title into the search bar. The application then retrieves relevant movie details based on the user's input." },

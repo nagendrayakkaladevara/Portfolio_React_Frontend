@@ -33,12 +33,13 @@ body {
 
 /* Width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  background: black;
 }
 
 /* Handle */
@@ -602,20 +603,25 @@ scrollbar-thumb:hover {
 
 
 ::selection {
-  background-color: #B4E380; /* Change this to your desired highlight color */
-  color: black; /* Optional: Change the text color if needed */
+  background-color: #B4E380;
+  /* Change this to your desired highlight color */
+  color: black;
+  /* Optional: Change the text color if needed */
 }
 
 /* For non-WebKit browsers (Firefox, etc.) */
 ::-moz-selection {
-  background-color: #B4E380; /* Change this to your desired highlight color */
-  color: black; /* Optional: Change the text color if needed */
+  background-color: #B4E380;
+  /* Change this to your desired highlight color */
+  color: black;
+  /* Optional: Change the text color if needed */
 }
 
 /* ------------ */
 
 .highlight {
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth color transition */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Smooth color transition */
   line-height: normal;
   background: rgba(135, 131, 120, .15);
   color: #EB5757;
@@ -625,24 +631,27 @@ scrollbar-thumb:hover {
 }
 
 .highlight:hover {
-  transform: scale(1.1); /* Scale effect on hover */
-  color: #FF4500; /* Change color on hover */
+  transform: scale(1.1);
+  /* Scale effect on hover */
+  color: #FF4500;
+  /* Change color on hover */
 }
 
 /* -------- */
 
-.Navactive{
+.Navactive {
   font-weight: 600;
   color: #C9DABF !important;
 }
 
 
-.projectsbackground{
+.projectsbackground {
   background: linear-gradient(to right, #FEF3E2, #DEAC80);
   border-radius: 10px;
 }
 
 .link-container {
   word-wrap: break-word;
-  max-width: 100%; /* Adjust as necessary */
+  max-width: 100%;
+  /* Adjust as necessary */
 }

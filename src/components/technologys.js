@@ -16,6 +16,8 @@ import SVNIcon from '../asserts/images/svnicon.png';
 import TailwindIcon from '../asserts/images/tailwindicon.png';
 import DasiyUI from '../asserts/images/dasisyuiicon.png';
 import NPMIcon from '../asserts/images/Npm-logo.png';
+import GitHubWhiteLogo from '../asserts/images/githubwhitelogo-removebg-preview.png';
+import NextJSWhiteLogo from '../asserts/images/nextjswhitelogo-removebg-preview.png';
 
 const Technologys = ({ data, titleColor }) => {
     const Tech = [
@@ -52,7 +54,7 @@ const Technologys = ({ data, titleColor }) => {
             },
         }, {
             "nextjs": {
-                icon: NextjsIcon,
+                icon: NextJSWhiteLogo,
                 title: "NextJs",
             },
         }, {
@@ -97,7 +99,7 @@ const Technologys = ({ data, titleColor }) => {
             },
         }, {
             "github": {
-                icon: GitHubIcon,
+                icon: GitHubWhiteLogo,
                 title: "Github",
             },
         }, {
@@ -117,8 +119,8 @@ const Technologys = ({ data, titleColor }) => {
         <>
             <div className='flex m-5 gap-3 justify-around flex-wrap focus-in-expand'>
                 {FilteredTech.map((item, index) => (
-                    <div key={index} className='flex gap-3 items-center projectstechblur p-5'>
-                        <p style={{ fontSize: "15px", color: titleColor }}>{item[Object.keys(item)[0]].title}</p>
+                    <div key={index} className='flex gap-3 items-center techblur p-5'>
+                        <p style={{ fontSize: "15px", color: titleColor }} className="hidden md:block">{item[Object.keys(item)[0]].title}</p>
                         <div style={{ width: '30px', height: "30px" }}>
                             <img src={item[Object.keys(item)[0]].icon} alt={`${item[Object.keys(item)[0]].title} icon`} width={30} height={30} />
                         </div>

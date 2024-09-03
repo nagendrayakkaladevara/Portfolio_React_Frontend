@@ -204,28 +204,28 @@ const Projects = () => {
             <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10  ' style={{ color: "#BFD8AF" }}>Projects.</p>
             <section id="section-projects">
                 <div className='flex justify-center items-center gap-4'>
-                    <p style={{ color: "#BFD8AF" }}>Corporate projects</p>
+                    <p style={{ color: "#BFD8AF" }}>Personal projects</p>
                     <label className="toggle-switch">
                         <input type="checkbox" checked={isToggled} onChange={handleToggle} />
                         <span className="toggle-slider round"></span>
                     </label>
-                    <p style={{ color: "#BFD8AF" }}>Personal projects</p>
+                    <p style={{ color: "#BFD8AF" }}>Corporate projects</p>
                 </div>
             </section>
             {/* <Toast ref={toast} /> */}
             {/* <p style={{ display: "flex", justifyContent: 'center', color:"#F8EDE3" , padding:"15px"}}>Project links provided in this portfolio are for demonstration purposes only.</p> */}
-            {!isToggled ? (<>
+            {isToggled ? (<>
                 <div>
                     {Data.map((item, index) => (
                         item.active === "yes" && (
-                            <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : "shadow-pop-br"} projectsbackground`} style={{ backgroundColor: "#BFEA7C" }}>
+                            <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : ""} techblur`}>
                                 <div className='flex items-center '>
-                                    <p className='ProjectTitle'>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
+                                    <p className='ProjectTitle text-white'>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
                                 </div>
                                 <br />
                                 <div>
                                     <p className='ProjectTitle '>Contributed Technologies:</p>
-                                    <Technologys data={item.techUsed} titleColor={"#416D19"} />
+                                    <Technologys data={item.techUsed} titleColor={"white"} />
                                 </div>
                                 <div>
                                     <p className='ProjectTitle '>My Role: </p>
@@ -244,25 +244,39 @@ const Projects = () => {
                 <div>
                     {DataPersonal.map((item, index) => (
                         item.active === "yes" && (
-                            <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : "shadow-pop-br"} projectsbackground`} >
+                            <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : "shadow-pop-br"} techblur`} >
                                 <div className={`flex items-center ${!isToggled ? "" : ""}`}>
                                     <p className='ProjectTitle'>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
                                 </div>
                                 <br />
                                 <div>
                                     <p className={`ProjectTitle   ${!isToggled ? "" : ""}`}>Technologies used:</p>
-                                    <Technologys data={item.techUsed} titleColor={"#416D19"} />
+                                    <Technologys data={item.techUsed} titleColor={"white"} />
                                 </div>
                                 <div className="link-container">
+                                    <div>
+                                        {item.github
+                                            &&
+                                            <button type="button" class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2">
+                                                <a href={item.github} target="_blank">GitHub</a>
+                                            </button>
+                                        }
+                                        {item.demolink
+                                            &&
+                                            <button type="button" class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2">
+                                                <a href={item.demolink} target="_blank">Demo</a>
+                                            </button>
+                                        }
+                                    </div>
                                     <span>
                                         {/* <p className='ProjectTitle '>My Role: </p> */}
-                                        <a className='ProjectTitleName' target="_blank" href={item.link} style={{ color: "blue", textDecoration: "underline", fontSize: "12px" }}>{item.link}</a>
+                                        <a className='text-blue-400' target="_blank" href={item.link} style={{ textDecoration: "underline", fontSize: "12px" }}>{item.link}</a>
                                     </span>
                                 </div>
                                 <br />
                                 <div>
                                     <p className='ProjectTitle '>Description: </p>
-                                    <p className='Projectdescription ' style={{ textAlign: "justify" }}>{item.description}<Link to={`/project/${item.projects}`} style={{ color: "#687EFF" }}>read more</Link></p>
+                                    <p className='Projectdescription ' style={{ textAlign: "justify", color: 'white' }}>{item.description}<Link to={`/project/${item.projects}`} style={{ color: "#687EFF" }}>read more</Link></p>
                                 </div>
                             </div>
                         )
