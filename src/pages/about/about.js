@@ -256,7 +256,7 @@ const About = () => {
                         </div>
                     </div>
                 </section>
-                <section id="">
+                <section id="" className="hidden md:block">
                     <div className='m-5 p-5 educationsection shadow-pop-brConstent' style={{ background: "#2d483f", borderRadius: "15px" }}>
                         <p className='workexprenceheading'>Education</p>
                         <p className='areatitle'>Graduation</p>

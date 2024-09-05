@@ -6,7 +6,7 @@ import Technologys from "../../components/technologys";
 export const DataPersonal = [
     {
         title: "ReUseReact UI (under development)",
-        techUsed: ["html", "css", "typescript", 'tailwind', "react", 'github'],
+        techUsed: ["typescript", 'tailwind', "nextjs", 'github'],
         description: "The ReUseReact UI Snippet Library is designed to streamline the development process for React developers by providing ready-to-use code snippets for common reusable components. This project addresses the frequent need to create components like buttons and input fields from scratch, allowing developers to focus on building their applications rather than reinventing the wheel.",
         active: "yes",
         demolink: "https://reusablereactui.netlify.app/",
@@ -23,7 +23,7 @@ export const DataPersonal = [
     },
     {
         title: "Railway Welfare Fund Tracker Application",
-        techUsed: ["html", "typescript", 'tailwind', "react", "PrimeReact", "expressjs", 'mangodb', 'github'],
+        techUsed: ["html","css", "typescript", 'primeReact', "react", "PrimeReact", "expressjs", 'mangodb', 'github'],
         description: "The Railway Welfare Fund Tracker is a application to keep track of the welfare funds i have developed backend application designed to efficiently manage and monitor the railway welfare fund and associated payments for each year. Built with Express and MongoDB, this application ensures secure and reliable handling of data related to welfare initiatives.",
         active: "yes",
         demolink: "https://railwaypaymentstrackingapp.netlify.app/",
@@ -91,7 +91,7 @@ export const DataPersonal = [
     {
         title: "Movie Search App (Revamp)",
         techUsed: ["nextjs", "tailwind", "typescript", "github"],
-        description: "Movie Searcher is a user-friendly web application built using React and deployed on Netlify. This application enables users to search for movie details by entering the movie's title, providing them with comprehensive information about their desired films.",
+        description: "Movie Search is a user-friendly web application built using NextJs and deployed on Netlify. This application enables users to search for movie details by entering the movie's title, providing them with comprehensive information about their desired films.This is a revamp of my old application build 2 years ago.",
         active: "yes",
         demolink: "https://moviesearchappnext.netlify.app/",
         github: 'https://github.com/nagendrayakkaladevara/Revamp-MovieApp-NextJs-TypeScipt',
@@ -107,7 +107,7 @@ export const DataPersonal = [
     }, {
         title: "Weather Finder (Revamp)",
         techUsed: ["nextjs", "tailwind", "typescript", "github"],
-        description: "Weather Finder is an innovative web application built using React and deployed on Netlify. Leveraging the power of Google Maps APIs for location services and search functionality, as well as weather APIs for real-time weather updates, Weather Finder provides users with accurate weather information based on their current location or specified search queries.",
+        description: "Weather Finder is an innovative web application built using NextJs and deployed on Netlify. Leveraging the power of Google Maps APIs for location services and search functionality, as well as weather APIs for real-time weather updates, Weather Finder provides users with accurate weather information based on their current location or specified search queries.This is a revamp of my old application build 2 years ago.",
         active: "yes",
         demolink: "https://weatherapp-skytrack.netlify.app/",
         github: 'https://github.com/nagendrayakkaladevara/Revamp-Weather-NextJs-TypeScipt',
@@ -136,6 +136,22 @@ export const DataPersonal = [
             { "sideHeading": "User-Friendly Interface", "keypoint": "The application boasts an intuitive and user-friendly interface, making it easy for users to navigate, upload, and manage their documents with ease." },
         ],
         conclusion: "Document Closet simplifies document management by providing users with a secure, centralized platform to store and organize all their documents. Whether it's personal files, work documents, or important records, users can trust Document Closet to keep their information safe and easily accessible whenever they need it."
+    },  {
+        title: "Crypto Price App",
+        techUsed: ["html","tailwind", "typescript", "react", 'github'],
+        description: "",
+        active: "yes",
+        demolink: "https://cryptopriceapplication.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/payment-details-railwayapplication-backend',
+        projects: 'RailwayWelfareFundTrackerApplicationBackend',
+        keypoints: [
+            { "sideHeading": "Express Framework", "keypoint": "Leveraging the robust capabilities of Express.js, the application provides a RESTful API for seamless interactions and data retrieval." },
+            { "sideHeading": "Zod Validation", "keypoint": "Implements Zod for data validation, ensuring that incoming data is thoroughly checked and meets specified criteria before processing. This enhances the application's reliability and security." },
+            { "sideHeading": "Authentication Middleware", "keypoint": " Incorporates middleware for user authentication, safeguarding sensitive data and ensuring that only authorized personnel can access specific functionalities." },
+            { "sideHeading": "Efficient Application Structure", "keypoint": "The project is organized using a clear architecture, with distinct layers for controllers, routers, and models. This modular approach promotes maintainability and scalability." },
+            { "sideHeading": "Database Configuration", "keypoint": "Includes a configuration module for database connections, simplifying the setup process and enabling easy adjustments as needed" }
+        ],
+        conclusion: 'The Railway Welfare Fund Tracker is intended for railway administration and financial departments seeking an effective way to manage welfare funds and streamline payment processes. It can also serve as a valuable resource for developers interested in best practices for building secure and maintainable backend applications.'
     }, {
         title: "Telugu Tribune",
         techUsed: ["html", "css", "javascript", "react"],

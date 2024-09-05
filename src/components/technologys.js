@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import ReactIcon from '../asserts/images/reacticon.png';
 import NextjsIcon from '../asserts/images/nextjsIcon.png';
 import HtmlIcon from '../asserts/images/htmlicon.png';
@@ -18,6 +18,7 @@ import DasiyUI from '../asserts/images/dasisyuiicon.png';
 import NPMIcon from '../asserts/images/Npm-logo.png';
 import GitHubWhiteLogo from '../asserts/images/githubwhitelogo-removebg-preview.png';
 import NextJSWhiteLogo from '../asserts/images/nextjswhitelogo-removebg-preview.png';
+import PrimeReactIcon from '../asserts/images/primereact-logo.png';
 
 const Technologys = ({ data, titleColor }) => {
     const Tech = [
@@ -106,7 +107,12 @@ const Technologys = ({ data, titleColor }) => {
             "npm": {
                 icon: NPMIcon,
                 title: "NPM",
-            },
+            }
+        },{
+            "primeReact": {
+                icon: PrimeReactIcon,
+                title: "Prime React",
+            }
         }
     ];
 

@@ -276,7 +276,9 @@ const Projects = () => {
                                 <br />
                                 <div>
                                     <p className='ProjectTitle '>Description: </p>
-                                    <p className='Projectdescription ' style={{ textAlign: "justify", color: 'white' }}>{item.description}<Link to={`/project/${item.projects}`} style={{ color: "#687EFF" }}>read more</Link></p>
+                                    <p className='Projectdescription ' style={{ textAlign: "justify", color: 'white' }}>{item.description}
+                                        {/* <Link to={`/project/${item.projects}`} style={{ color: "#687EFF" }}>read more</Link> */}
+                                    </p>
                                 </div>
                             </div>
                         )
