@@ -29,8 +29,13 @@ import GoogleIDX from '../../asserts/images/googleidx.png';
 import AWSIcon from '../../asserts/images/awsicon-removebg-preview.png';
 import NPMIcon from '../../asserts/images/Npm-logo.png';
 import GitHubWhiteLogo from '../../asserts/images/githubwhitelogo-removebg-preview.png';
+import blogpostimage from '../../asserts/images/blogimage.jpg';
 
 import '../../styles/styles.css';
+import { getBlogCatlog } from "../../services/service";
+import { formatDate } from "../blog/blogPost";
+import { DataPersonal } from "../projects/project";
+import { Link } from "react-router-dom";
 
 const StarIcon = ({ width = "16", height = "16", fill = "#FCDC2A" }) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill={fill} viewBox="0 0 16 16" className='bi bi-star-fill'>
@@ -196,6 +201,7 @@ const About = () => {
     console.log("🚀 ~ About ~ gitData:", gitData)
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [blogdata, setBlogData] = useState(null);
 
     useEffect(() => {
 
@@ -218,6 +224,25 @@ const About = () => {
             });
     }, []);
 
+
+    useEffect(() => {
+        const getData = async () => {
+            try {
+                setLoading(true);
+                const fetchedData = await getBlogCatlog();
+                setBlogData(fetchedData);
+            } catch (error) {
+                console.log('Error fetching data');
+            } finally {
+
+            }
+        };
+
+        getData();
+    }, []);
+
+    const LatestBlogDate = blogdata && formatDate(blogdata[blogdata.length - 1].date);
+    const TotalProjects = DataPersonal.length;
 
     return (
         <>
@@ -242,17 +267,20 @@ const About = () => {
                 <section id="section-about">
                     <div className='m-5 p-5 workexperiencesection shadow-pop-brConstent' style={{ background: "#2d483f", borderRadius: "15px" }}>
                         <p className='workexprenceheading'>Corporate Work Experience</p>
-                        <div className='flex items-center'>
+                        <div className=' items-center'>
                             <img src={ProdaptLogo} alt='prodapt logo' className='m-2 companylogo' />
                             <p className='companytitle'>Prodapt Solutions Private Limited.</p>
                         </div>
                         <div className='detailsSections'>
-                            <p className='disignationname'>Associate Software Engineer</p>
+                            <p className='disignationname' style={{ fontSize: '10px' }}>Associate Software Engineer</p>
                             <br />
-                            <p>14/Mar/2022 - Till date </p>
-                            <p>Responsibility : Web Developer</p>
-                            <p>Tech Used : React,Java,Mysql,Microsoft Sharepoint.</p>
-                            <p>No of Applications Developed: 05</p>
+                            <div style={{ fontSize: "12px" }}>
+                                <p>14/Mar/2022 - Till date </p>
+                                <p>Responsibility : Web Developer</p>
+                                <p>Tech Used : React, ExpressJs, Mysql, Microsoft Sharepoint.</p>
+                                <p>No of Applications Developed: 05</p>
+
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -272,6 +300,56 @@ const About = () => {
                         <p className='year'>2015</p>
                     </div>
                 </section>
+            </div>
+
+
+
+            <div class="my-8 flex items-center gap-4 before:h-px before:flex-1 before:bg-gray-300  before:content-[''] after:h-px after:flex-1 after:bg-gray-300  after:content-[''] text-white">More</div>
+
+
+
+            <div className="p-4">
+
+                <div class="mx-auto max-w-md overflow-hidden rounded-lg shadow" style={{ color: "white" }}>
+                    <ul class="divide-y divide-gray-100 py-2 px-4">
+                        <Link to='/projects'>
+                            <li class="flex py-4">
+                                <div class="mr-4 flex-1">
+                                    <h4 class="text-lg font-medium text-white">Projects</h4>
+                                    <div class="mt-1 text-sm text-gray-400"><span>No of Projects</span> • <time>{TotalProjects}</time></div>
+                                </div>
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1587614380862-0294308ae58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="h-20 w-20 rounded-lg object-cover" alt="" />
+                                </div>
+                            </li>
+                        </Link>
+                        <Link to='/blog'>
+                            <li class="flex py-4">
+                                <div class="mr-4 flex-1">
+                                    <h4 class="text-lg font-medium text-white">Blog</h4>
+                                    <div class="mt-1 text-sm text-gray-400"><span>Latest</span> • <time>{LatestBlogDate}</time></div>
+                                </div>
+
+                                <div>
+                                    <img src={blogpostimage} class="h-20 w-20 rounded-lg object-cover" alt="" />
+                                </div>
+                            </li>
+                        </Link>
+                        <Link to='/contacts'>
+                            <li class="flex py-4">
+                                <div class="mr-4 flex-1">
+                                    <h4 class="text-lg font-medium text-white">Contact</h4>
+                                    <div class="mt-1 text-sm text-gray-400"><span>Phone</span> • <span>Gmail</span> • <span>LinkedIn</span> • <span>X</span> • <span>Outlook</span></div>
+                                </div>
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1631016800696-5ea8801b3c2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80" class="h-20 w-20 rounded-lg object-cover" alt="" />
+
+                                </div>
+                            </li>
+                        </Link>
+                    </ul>
+                </div>
+
             </div>
             <section id="section-Technologies">
                 <p className='TechnologiesHeading flex justify-center'>Technologies</p>
@@ -314,11 +392,11 @@ const About = () => {
                     <img src={gitData?.avatar_url} style={{ width: "150px", height: "150px", borderRadius: "50%" }} />
                     <div>
                         <div className="block p-2">
-                        <p>GitHub Id: {gitData?.login}</p>
-                        <p>No of Public Repo's: {gitData?.public_repos}</p>
-                        <p>No of Public Gists: {gitData?.public_repos}</p>
+                            <p>GitHub Id: {gitData?.login}</p>
+                            <p>No of Public Repo's: {gitData?.public_repos}</p>
+                            <p>No of Public Gists: {gitData?.public_gists}</p>
                         </div>
-                       
+
                         <button type="button" class="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
                             <a href="https://github.com/nagendrayakkaladevara" target="_black">Profile</a>
                         </button>

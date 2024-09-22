@@ -6,7 +6,7 @@ import Technologys from "../../components/technologys";
 export const DataPersonal = [
     {
         title: "ReUseReact UI (under development)",
-        techUsed: ["typescript", 'tailwind', "nextjs", 'github'],
+        techUsed: ["html","typescript", 'tailwind', "nextjs", 'github'],
         description: "The ReUseReact UI Snippet Library is designed to streamline the development process for React developers by providing ready-to-use code snippets for common reusable components. This project addresses the frequent need to create components like buttons and input fields from scratch, allowing developers to focus on building their applications rather than reinventing the wheel.",
         active: "yes",
         demolink: "https://reusablereactui.netlify.app/",
@@ -40,7 +40,7 @@ export const DataPersonal = [
     },
     {
         title: "React Reusable Button Package",
-        techUsed: ["typescript"],
+        techUsed: ["typescript","npm","github"],
         description: "The React Reusable Button Package is a versatile npm package developed to simplify UI development in React applications. This package provides a customizable button component that enhances code reusability and streamlines the implementation of button elements across various projects.",
         active: "yes",
         demolink: "https://www.npmjs.com/package/@nagendrayakkaladevara/react-button-component",
@@ -90,7 +90,7 @@ export const DataPersonal = [
     },
     {
         title: "Movie Search App (Revamp)",
-        techUsed: ["nextjs", "tailwind", "typescript", "github"],
+        techUsed: ["html","nextjs", "tailwind", "typescript", "github"],
         description: "Movie Search is a user-friendly web application built using NextJs and deployed on Netlify. This application enables users to search for movie details by entering the movie's title, providing them with comprehensive information about their desired films.This is a revamp of my old application build 2 years ago.",
         active: "yes",
         demolink: "https://moviesearchappnext.netlify.app/",
@@ -106,7 +106,7 @@ export const DataPersonal = [
         conclusion: "Movie Searcher simplifies the process of finding movie details, offering users a convenient and efficient way to access information about their favorite films. Whether users are looking for movie synopses, cast members, or ratings, Movie Searcher provides a comprehensive solution for all their movie-related queries."
     }, {
         title: "Weather Finder (Revamp)",
-        techUsed: ["nextjs", "tailwind", "typescript", "github"],
+        techUsed: ["html","nextjs", "tailwind", "typescript", "github"],
         description: "Weather Finder is an innovative web application built using NextJs and deployed on Netlify. Leveraging the power of Google Maps APIs for location services and search functionality, as well as weather APIs for real-time weather updates, Weather Finder provides users with accurate weather information based on their current location or specified search queries.This is a revamp of my old application build 2 years ago.",
         active: "yes",
         demolink: "https://weatherapp-skytrack.netlify.app/",

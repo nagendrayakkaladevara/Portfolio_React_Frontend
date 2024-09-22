@@ -127,7 +127,7 @@ const Technologys = ({ data, titleColor }) => {
                 {FilteredTech.map((item, index) => (
                     <div key={index} className='flex gap-3 items-center techblur p-5'>
                         <p style={{ fontSize: "15px", color: titleColor }} className="hidden md:block">{item[Object.keys(item)[0]].title}</p>
-                        <div style={{ width: '30px', height: "30px" }}>
+                        <div style={{ width: '30px', height: "30px" }} className="flex items-center">
                             <img src={item[Object.keys(item)[0]].icon} alt={`${item[Object.keys(item)[0]].title} icon`} width={30} height={30} />
                         </div>
                     </div>

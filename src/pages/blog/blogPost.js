@@ -5,7 +5,7 @@ import { getBlog } from "../../services/service";
 import CodeEditor from '@uiw/react-textarea-code-editor';
 
 
-function formatDate(dateString) {
+export function formatDate(dateString) {
     const date = new Date(dateString);
 
     // Get day, month, and year
