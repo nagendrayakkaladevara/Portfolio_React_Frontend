@@ -76,10 +76,10 @@ const BlogPost = () => {
                         <p>Updated At: {data.updatedAt}</p>
                     </div>
                     {/* <div style={{ height: "100vh" }}> */}
-                        <div className='flex justify-center  m-10 '  >
-                            <div className='blogPostSection p-5'>
+                        <div className='flex justify-center  m-10 h-screen'  >
+                            <div className='blogPostSection p-5 h-fit'>
                                 <div>
-                                    <p className='text-3xl font-bold sm:text-1xl flex justify-start focus-in-expand' style={{ color: "#12372A" }}>{data.title}</p>
+                                    <p className='sm:text-3xl font-bold text-base flex justify-start focus-in-expand' style={{ color: "#12372A" }}>{data.title}</p>
                                     <p className='BlogDate'>{formatDate(data.date_published)}</p>
                                     <div style={{ display: "flex", flexDirection: "row", gap: "10px" }}>
                                         {data.categories.map((items, index) => {
@@ -92,7 +92,7 @@ const BlogPost = () => {
                                 <br />
                                 <br />
                                 {data.description.map((desc, index) => (
-                                    <div className='blogdiscription focus-in-expand' key={index}>
+                                    <div className=' focus-in-expand text-sm sm:text-base text-justify' key={index}>
                                         <p>{desc.paragraph1}</p>
                                         <br />
                                         {data.code !== '' &&

@@ -201,17 +201,19 @@ const Projects = () => {
 
     return (
         <>
-            <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10  ' style={{ color: "#BFD8AF" }}>Projects.</p>
-            <section id="section-projects">
-                <div className='flex justify-center items-center gap-4'>
-                    <p style={{ color: "#BFD8AF" }}>Personal projects</p>
-                    <label className="toggle-switch">
-                        <input type="checkbox" checked={isToggled} onChange={handleToggle} />
-                        <span className="toggle-slider round"></span>
-                    </label>
-                    <p style={{ color: "#BFD8AF" }}>Corporate projects</p>
-                </div>
-            </section>
+            <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10  ' style={{ color: "#BFD8AF" }}>Personal Projects.</p>
+            <div style={{ display: "none" }}>
+                <section id="section-projects">
+                    <div className='flex justify-center items-center gap-4'>
+                        <p style={{ color: "#BFD8AF" }}>Personal projects</p>
+                        <label className="toggle-switch">
+                            <input type="checkbox" checked={isToggled} onChange={handleToggle} />
+                            <span className="toggle-slider round"></span>
+                        </label>
+                        <p style={{ color: "#BFD8AF" }}>Corporate projects</p>
+                    </div>
+                </section>
+            </div>
             {/* <Toast ref={toast} /> */}
             {/* <p style={{ display: "flex", justifyContent: 'center', color:"#F8EDE3" , padding:"15px"}}>Project links provided in this portfolio are for demonstration purposes only.</p> */}
             {isToggled ? (<>
@@ -220,20 +222,20 @@ const Projects = () => {
                         item.active === "yes" && (
                             <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : ""} techblur`}>
                                 <div className='flex items-center '>
-                                    <p className='ProjectTitle text-white'>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
+                                    <p className='ProjectTitle text-white' style={{color:"#BFD8AF"}}>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <p className='ProjectTitle '>Contributed Technologies:</p>
+                                    <p className='ProjectTitle' style={{color:"#BFD8AF"}}>Contributed Technologies:</p>
                                     <Technologys data={item.techUsed} titleColor={"white"} />
                                 </div>
                                 <div>
-                                    <p className='ProjectTitle '>My Role: </p>
+                                    <p className='ProjectTitle'>My Role: </p>
                                     <p className='ProjectTitleName '>{item.myrole}</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <p className='ProjectTitle '>Description: </p>
+                                    <p className='ProjectTitle'>Description: </p>
                                     <p className='ProjectTitleName '>{item.description}</p>
                                 </div>
                             </div>
@@ -246,11 +248,11 @@ const Projects = () => {
                         item.active === "yes" && (
                             <div key={index} className={`m-8 p-5 ${windowWidth < 680 ? "shadow-pop-brConstent" : "shadow-pop-br"} techblur`} >
                                 <div className={`flex items-center ${!isToggled ? "" : ""}`}>
-                                    <p className='ProjectTitle'>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
+                                    <p className='ProjectTitle' style={{color:"#BFD8AF"}}>Title: </p><p className='ProjectTitleName'>&nbsp;{item.title}</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <p className={`ProjectTitle   ${!isToggled ? "" : ""}`}>Technologies used:</p>
+                                    <p className={`ProjectTitle   ${!isToggled ? "" : ""}`} style={{color:"#BFD8AF"}}>Technologies used:</p>
                                     <Technologys data={item.techUsed} titleColor={"white"} />
                                 </div>
                                 <div className="link-container">
@@ -275,8 +277,8 @@ const Projects = () => {
                                 </div>
                                 <br />
                                 <div>
-                                    <p className='ProjectTitle '>Description: </p>
-                                    <p className='Projectdescription ' style={{ textAlign: "justify", color: 'white' }}>{item.description}
+                                    <p className='ProjectTitle' style={{color:"#BFD8AF"}}>Description: </p>
+                                    <p className='Projectdescription' style={{ textAlign: "justify", color: 'white' }}>{item.description}
                                         {/* <Link to={`/project/${item.projects}`} style={{ color: "#687EFF" }}>read more</Link> */}
                                     </p>
                                 </div>

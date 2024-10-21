@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import ReactIcon from '../asserts/images/reacticon.png';
 import NextjsIcon from '../asserts/images/nextjsIcon.png';
 import HtmlIcon from '../asserts/images/htmlicon.png';
@@ -19,6 +19,8 @@ import NPMIcon from '../asserts/images/Npm-logo.png';
 import GitHubWhiteLogo from '../asserts/images/githubwhitelogo-removebg-preview.png';
 import NextJSWhiteLogo from '../asserts/images/nextjswhitelogo-removebg-preview.png';
 import PrimeReactIcon from '../asserts/images/primereact-logo.png';
+import shadcnui from '../asserts/images/shadcnlogo.png';
+import websocketlogo from '../asserts/images/websocketlogo.jpg';
 
 const Technologys = ({ data, titleColor }) => {
     const Tech = [
@@ -99,21 +101,33 @@ const Technologys = ({ data, titleColor }) => {
                 title: "SVN",
             },
         }, {
-            "github": {
-                icon: GitHubWhiteLogo,
-                title: "Github",
-            },
-        }, {
             "npm": {
                 icon: NPMIcon,
                 title: "NPM",
             }
-        },{
+        }, {
             "primeReact": {
                 icon: PrimeReactIcon,
                 title: "Prime React",
             }
-        }
+        },
+        {
+            "shadcnui": {
+                icon: shadcnui,
+                title: "shadcn/ui",
+            }
+        },
+        {
+            "websockets": {
+                icon: websocketlogo,
+                title: "Websocket",
+            }
+        }, {
+            "github": {
+                icon: GitHubWhiteLogo,
+                title: "Github",
+            },
+        },
     ];
 
     const filterTech = (data, tech) => {

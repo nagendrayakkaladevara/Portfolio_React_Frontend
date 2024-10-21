@@ -5,8 +5,42 @@ import Technologys from "../../components/technologys";
 
 export const DataPersonal = [
     {
+        title: "Preview Messenger (A unique chatting app)",
+        techUsed: ["html", "typescript", 'tailwind', "react", 'expressjs', 'mangodb', "websockets", 'shadcnui', 'github'],
+        description: "Built a real-time chat app with WebSockets, allowing users to see what their friend is typing before sending the message. Features include last seen status, location sharing, and friend requests. Utilized Tailwind CSS and shadcn for a sleek, responsive UI.",
+        active: "yes",
+        demolink: "previewmessenger.netlify.app",
+        github: 'https://github.com/nagendrayakkaladevara/chatapp-Vite-React-Typescript-Frontend',
+        projects: 'previewmessenger',
+        keypoints: [
+            { "sideHeading": "No Additional Dependencies", "keypoint": "Users can integrate these snippets without the hassle of installing extra libraries, ensuring a lightweight and efficient development experience." },
+            { "sideHeading": "Reusable Code Snippets", "keypoint": "The library offers a comprehensive collection of code snippets for essential React components, enabling developers to quickly copy and paste code directly into their projects." },
+            { "sideHeading": "Customization Flexibility", "keypoint": "While the snippets are ready to use, developers have the flexibility to modify components according to their project requirements, promoting creativity and adaptability." },
+            { "sideHeading": "Tailwind CSS Integration", "keypoint": "The project includes snippets that utilize Tailwind CSS, allowing developers to leverage utility-first styling for their components effortlessly." },
+            { "sideHeading": "Benefits", "keypoint": "This project significantly reduces the time and effort required for component development in React, making it an invaluable resource for developers of all skill levels. By providing a straightforward way to access and customize reusable components, the ReUseReact UI Library empowers developers to enhance their productivity and focus on delivering high-quality applications." }
+        ],
+        conclusion: 'This project is aimed at React developers looking for a quick and efficient way to implement common components in their projects, whether they are beginners seeking guidance or experienced developers looking to save time.'
+    },
+    {
+        title: "Crew Contacts App East Coast Railway",
+        techUsed: ["html", "typescript", 'tailwind', "react", 'github'],
+        description: "The Crew Contacts application is a dedicated tool for managing crew members' phone numbers, featuring voice search integration for quick and hands-free access. Built with ShadCN and Tailwind CSS, the app offers a sleek, modern design while ensuring fast and responsive performance across devices. Its voice search functionality enhances usability, allowing users to effortlessly find contacts without manual input, making it a perfect solution for seamless communication within teams",
+        active: "yes",
+        demolink: "https://crewcontacts.netlify.app/",
+        github: '',
+        projects: 'CrewContactsApp',
+        keypoints: [
+            { "sideHeading": "No Additional Dependencies", "keypoint": "Users can integrate these snippets without the hassle of installing extra libraries, ensuring a lightweight and efficient development experience." },
+            { "sideHeading": "Reusable Code Snippets", "keypoint": "The library offers a comprehensive collection of code snippets for essential React components, enabling developers to quickly copy and paste code directly into their projects." },
+            { "sideHeading": "Customization Flexibility", "keypoint": "While the snippets are ready to use, developers have the flexibility to modify components according to their project requirements, promoting creativity and adaptability." },
+            { "sideHeading": "Tailwind CSS Integration", "keypoint": "The project includes snippets that utilize Tailwind CSS, allowing developers to leverage utility-first styling for their components effortlessly." },
+            { "sideHeading": "Benefits", "keypoint": "This project significantly reduces the time and effort required for component development in React, making it an invaluable resource for developers of all skill levels. By providing a straightforward way to access and customize reusable components, the ReUseReact UI Library empowers developers to enhance their productivity and focus on delivering high-quality applications." }
+        ],
+        conclusion: 'This project is aimed at React developers looking for a quick and efficient way to implement common components in their projects, whether they are beginners seeking guidance or experienced developers looking to save time.'
+    },
+    {
         title: "ReUseReact UI (under development)",
-        techUsed: ["html","typescript", 'tailwind', "nextjs", 'github'],
+        techUsed: ["html", "typescript", 'tailwind', "nextjs", 'github'],
         description: "The ReUseReact UI Snippet Library is designed to streamline the development process for React developers by providing ready-to-use code snippets for common reusable components. This project addresses the frequent need to create components like buttons and input fields from scratch, allowing developers to focus on building their applications rather than reinventing the wheel.",
         active: "yes",
         demolink: "https://reusablereactui.netlify.app/",
@@ -23,7 +57,7 @@ export const DataPersonal = [
     },
     {
         title: "Railway Welfare Fund Tracker Application",
-        techUsed: ["html","css", "typescript", 'primeReact', "react", "PrimeReact", "expressjs", 'mangodb', 'github'],
+        techUsed: ["html", "css", "typescript", 'primeReact', "react", "PrimeReact", "expressjs", 'mangodb', 'github'],
         description: "The Railway Welfare Fund Tracker is a application to keep track of the welfare funds i have developed backend application designed to efficiently manage and monitor the railway welfare fund and associated payments for each year. Built with Express and MongoDB, this application ensures secure and reliable handling of data related to welfare initiatives.",
         active: "yes",
         demolink: "https://railwaypaymentstrackingapp.netlify.app/",
@@ -40,7 +74,7 @@ export const DataPersonal = [
     },
     {
         title: "React Reusable Button Package",
-        techUsed: ["typescript","npm","github"],
+        techUsed: ["typescript", "npm", "github"],
         description: "The React Reusable Button Package is a versatile npm package developed to simplify UI development in React applications. This package provides a customizable button component that enhances code reusability and streamlines the implementation of button elements across various projects.",
         active: "yes",
         demolink: "https://www.npmjs.com/package/@nagendrayakkaladevara/react-button-component",
@@ -54,6 +88,23 @@ export const DataPersonal = [
             { "sideHeading": "Integration with Icon Libraries", "keypoint": "The package allows for easy integration with popular icon libraries, enabling the addition of icons to buttons for improved visual appeal and user interaction." }
         ],
         conclusion: 'This npm package promotes efficient UI development by providing a reusable button component that minimizes redundancy and maximizes flexibility. By incorporating various styles, sizes, and customization options, developers can implement buttons that align perfectly with their application’s design and functionality.'
+    },
+    {
+        title: "Movie Search App (Revamp)",
+        techUsed: ["html", "nextjs", "tailwind", "typescript", "github"],
+        description: "Movie Search is a user-friendly web application built using NextJs and deployed on Netlify. This application enables users to search for movie details by entering the movie's title, providing them with comprehensive information about their desired films.This is a revamp of my old application build 2 years ago.",
+        active: "yes",
+        demolink: "https://moviesearchappnext.netlify.app/",
+        github: 'https://github.com/nagendrayakkaladevara/Revamp-MovieApp-NextJs-TypeScipt',
+        projects: 'MovieSearchApp',
+        keypoints: [
+            { "sideHeading": "Movie Search Functionality", "keypoint": "Users can easily search for movies by entering the movie's title into the search bar. The application then retrieves relevant movie details based on the user's input." },
+            { "sideHeading": "Comprehensive Movie Details", "keypoint": "Movie Searcher provides users with comprehensive information about the searched movies, including title, release year, genre, cast, synopsis, ratings, and more." },
+            { "sideHeading": "Responsive Design", "keypoint": "With a responsive design, Movie Searcher ensures that users can access and utilize the application seamlessly across various devices, including desktops, tablets, and smartphones." },
+            { "sideHeading": "User-Friendly Interface", "keypoint": " Movie Searcher boasts a clean and intuitive interface, making it easy for users to navigate and interact with the application. The search functionality is straightforward, allowing users to find the desired movie details quickly." },
+            { "sideHeading": "Instant Results", "keypoint": "Upon entering the movie's title into the search bar, Movie Searcher instantly retrieves and displays the relevant movie details, providing users with timely information." },
+        ],
+        conclusion: "Movie Searcher simplifies the process of finding movie details, offering users a convenient and efficient way to access information about their favorite films. Whether users are looking for movie synopses, cast members, or ratings, Movie Searcher provides a comprehensive solution for all their movie-related queries."
     },
     {
         title: "ECoRSU App",
@@ -87,26 +138,9 @@ export const DataPersonal = [
             { "sideHeading": "User-Friendly Interface", "keypoint": "Designed with a focus on usability, the application provides an intuitive interface that simplifies navigation and enhances user experience." }
         ],
         conclusion: "The ECoRSU Management Application serves as a centralized platform for managing news updates, documents, and visualizing key data points relevant to the ECoRSU community. By integrating authentication, content management, and data visualization functionalities, it empowers administrators to efficiently oversee and enhance communication within the organization"
-    },
-    {
-        title: "Movie Search App (Revamp)",
-        techUsed: ["html","nextjs", "tailwind", "typescript", "github"],
-        description: "Movie Search is a user-friendly web application built using NextJs and deployed on Netlify. This application enables users to search for movie details by entering the movie's title, providing them with comprehensive information about their desired films.This is a revamp of my old application build 2 years ago.",
-        active: "yes",
-        demolink: "https://moviesearchappnext.netlify.app/",
-        github: 'https://github.com/nagendrayakkaladevara/Revamp-MovieApp-NextJs-TypeScipt',
-        projects: 'MovieSearchApp',
-        keypoints: [
-            { "sideHeading": "Movie Search Functionality", "keypoint": "Users can easily search for movies by entering the movie's title into the search bar. The application then retrieves relevant movie details based on the user's input." },
-            { "sideHeading": "Comprehensive Movie Details", "keypoint": "Movie Searcher provides users with comprehensive information about the searched movies, including title, release year, genre, cast, synopsis, ratings, and more." },
-            { "sideHeading": "Responsive Design", "keypoint": "With a responsive design, Movie Searcher ensures that users can access and utilize the application seamlessly across various devices, including desktops, tablets, and smartphones." },
-            { "sideHeading": "User-Friendly Interface", "keypoint": " Movie Searcher boasts a clean and intuitive interface, making it easy for users to navigate and interact with the application. The search functionality is straightforward, allowing users to find the desired movie details quickly." },
-            { "sideHeading": "Instant Results", "keypoint": "Upon entering the movie's title into the search bar, Movie Searcher instantly retrieves and displays the relevant movie details, providing users with timely information." },
-        ],
-        conclusion: "Movie Searcher simplifies the process of finding movie details, offering users a convenient and efficient way to access information about their favorite films. Whether users are looking for movie synopses, cast members, or ratings, Movie Searcher provides a comprehensive solution for all their movie-related queries."
     }, {
         title: "Weather Finder (Revamp)",
-        techUsed: ["html","nextjs", "tailwind", "typescript", "github"],
+        techUsed: ["html", "nextjs", "tailwind", "typescript", "github"],
         description: "Weather Finder is an innovative web application built using NextJs and deployed on Netlify. Leveraging the power of Google Maps APIs for location services and search functionality, as well as weather APIs for real-time weather updates, Weather Finder provides users with accurate weather information based on their current location or specified search queries.This is a revamp of my old application build 2 years ago.",
         active: "yes",
         demolink: "https://weatherapp-skytrack.netlify.app/",
@@ -136,9 +170,9 @@ export const DataPersonal = [
             { "sideHeading": "User-Friendly Interface", "keypoint": "The application boasts an intuitive and user-friendly interface, making it easy for users to navigate, upload, and manage their documents with ease." },
         ],
         conclusion: "Document Closet simplifies document management by providing users with a secure, centralized platform to store and organize all their documents. Whether it's personal files, work documents, or important records, users can trust Document Closet to keep their information safe and easily accessible whenever they need it."
-    },  {
+    }, {
         title: "Crypto Price App",
-        techUsed: ["html","tailwind", "typescript", "react", 'github'],
+        techUsed: ["html", "tailwind", "typescript", "react", 'github'],
         description: "",
         active: "yes",
         demolink: "https://cryptopriceapplication.netlify.app/",
