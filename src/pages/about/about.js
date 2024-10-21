@@ -304,45 +304,45 @@ const About = () => {
 
 
 
-            <div class="my-8 flex items-center gap-4 before:h-px before:flex-1 before:bg-gray-300  before:content-[''] after:h-px after:flex-1 after:bg-gray-300  after:content-[''] text-white">More</div>
+            <div className="my-8 flex items-center gap-4 before:h-px before:flex-1 before:bg-gray-300  before:content-[''] after:h-px after:flex-1 after:bg-gray-300  after:content-[''] text-white">More</div>
 
 
 
             <div className="p-4">
 
-                <div class="mx-auto max-w-md overflow-hidden rounded-lg shadow" style={{ color: "white" }}>
-                    <ul class="divide-y divide-gray-100 py-2 px-4">
+                <div className="mx-auto max-w-md overflow-hidden rounded-lg shadow" style={{ color: "white" }}>
+                    <ul className="divide-y divide-gray-100 py-2 px-4">
                         <Link to='/projects'>
-                            <li class="flex py-4">
-                                <div class="mr-4 flex-1">
-                                    <h4 class="text-lg font-medium text-white">Projects</h4>
-                                    <div class="mt-1 text-sm text-gray-400"><span>No of Projects</span> • <time>{TotalProjects}</time></div>
+                            <li className="flex p-3 hover:bg-slate-800 rounded-lg">
+                                <div className="mr-4 flex-1">
+                                    <h4 className="text-lg font-medium text-white">Projects</h4>
+                                    <div className="mt-1 text-sm text-gray-400"><span>No of Projects</span> • <time>{TotalProjects}</time></div>
                                 </div>
                                 <div>
-                                    <img src="https://images.unsplash.com/photo-1587614380862-0294308ae58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="h-20 w-20 rounded-lg object-cover" alt="" />
+                                    <img src="https://images.unsplash.com/photo-1587614380862-0294308ae58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" className="h-20 w-20 rounded-lg object-cover" alt="" />
                                 </div>
                             </li>
                         </Link>
                         <Link to='/blog'>
-                            <li class="flex py-4">
-                                <div class="mr-4 flex-1">
-                                    <h4 class="text-lg font-medium text-white">Blog</h4>
-                                    <div class="mt-1 text-sm text-gray-400"><span>Latest</span> • <time>{LatestBlogDate}</time></div>
+                            <li className="flex p-3 hover:bg-slate-800 rounded-lg">
+                                <div className="mr-4 flex-1">
+                                    <h4 className="text-lg font-medium text-white">Blog</h4>
+                                    <div className="mt-1 text-sm text-gray-400"><span>Latest</span> • <time>{LatestBlogDate}</time></div>
                                 </div>
 
                                 <div>
-                                    <img src={blogpostimage} class="h-20 w-20 rounded-lg object-cover" alt="" />
+                                    <img src={blogpostimage} className="h-20 w-20 rounded-lg object-cover" alt="" />
                                 </div>
                             </li>
                         </Link>
                         <Link to='/contacts'>
-                            <li class="flex py-4">
-                                <div class="mr-4 flex-1">
-                                    <h4 class="text-lg font-medium text-white">Contact</h4>
-                                    <div class="mt-1 text-sm text-gray-400"><span>Phone</span> • <span>Gmail</span> • <span>LinkedIn</span> • <span>X</span> • <span>Outlook</span></div>
+                            <li className="flex p-3 hover:bg-slate-800 rounded-lg">
+                                <div className="mr-4 flex-1">
+                                    <h4 className="text-lg font-medium text-white">Contact</h4>
+                                    <div className="mt-1 text-sm text-gray-400"><span>Phone</span> • <span>Gmail</span> • <span>LinkedIn</span> • <span>X</span> • <span>Outlook</span></div>
                                 </div>
                                 <div>
-                                    <img src="https://images.unsplash.com/photo-1631016800696-5ea8801b3c2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80" class="h-20 w-20 rounded-lg object-cover" alt="" />
+                                    <img src="https://images.unsplash.com/photo-1631016800696-5ea8801b3c2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80" className="h-20 w-20 rounded-lg object-cover" alt="" />
 
                                 </div>
                             </li>
@@ -397,7 +397,7 @@ const About = () => {
                             <p>No of Public Gists: {gitData?.public_gists}</p>
                         </div>
 
-                        <button type="button" class="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
+                        <button type="button" className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2">
                             <a href="https://github.com/nagendrayakkaladevara" target="_black">Profile</a>
                         </button>
                         {/* <button type="button" className="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 me-2 mb-2">
