@@ -30,12 +30,14 @@ import AWSIcon from '../../asserts/images/awsicon-removebg-preview.png';
 import NPMIcon from '../../asserts/images/Npm-logo.png';
 import GitHubWhiteLogo from '../../asserts/images/githubwhitelogo-removebg-preview.png';
 import blogpostimage from '../../asserts/images/blogimage.jpg';
+import websocketsIcon from '../../asserts/images/websocketlogo.jpg';
 
 import '../../styles/styles.css';
 import { getBlogCatlog } from "../../services/service";
 import { formatDate } from "../blog/blogPost";
 import { DataPersonal } from "../projects/project";
 import { Link } from "react-router-dom";
+import { IntroMessage } from "../applocation";
 
 const StarIcon = ({ width = "16", height = "16", fill = "#FCDC2A" }) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill={fill} viewBox="0 0 16 16" className='bi bi-star-fill'>
@@ -122,6 +124,9 @@ const About = () => {
         }, {
             "icon": NPMIcon,
             "title": "NPM Packages"
+        }, {
+            "icon": websocketsIcon,
+            "title": "Websocket"
         }
     ]
 
@@ -258,9 +263,11 @@ const About = () => {
 
             </div>
             <div className='introsectioncustom m-10 text-justify '>
-                <p>I have an insatiable curiosity that drives me to constantly seek knowledge and growth. Whether it&apos;s staying ahead of industry trends, mastering new technologies, or exploring innovative solutions, what makes coding truly special is its power to bring ideas to life. It&apos;s a creative outlet where innovation knows no bounds. It&apos;s where I get to turn imagination into reality.</p>
+            <p className="m-10 text-xs sm:text-xl  justify-center items-center gap-1 flex-wrap text-justify" style={{ color: "#F0F3FF" }}>{IntroMessage}</p>
+
+                {/* <p>I have an insatiable curiosity that drives me to constantly seek knowledge and growth. Whether it&apos;s staying ahead of industry trends, mastering new technologies, or exploring innovative solutions, what makes coding truly special is its power to bring ideas to life. It&apos;s a creative outlet where innovation knows no bounds. It&apos;s where I get to turn imagination into reality.</p> */}
                 <br />
-                <p>Over the past two years, I have immersed myself in the web development industry, eagerly embracing new technologies and methodologies. I pride myself on being the kind of person who upholds loyalty and honesty, values that contribute to fostering a healthy and positive environment within the organization.</p>
+                {/* <p>Over the past two years, I have immersed myself in the web development industry, eagerly embracing new technologies and methodologies. I pride myself on being the kind of person who upholds loyalty and honesty, values that contribute to fostering a healthy and positive environment within the organization.</p> */}
             </div>
 
             <div className='flex justify-evenly flex-wrap '>
@@ -272,19 +279,19 @@ const About = () => {
                             <p className='companytitle'>Prodapt Solutions Private Limited.</p>
                         </div>
                         <div className='detailsSections'>
-                            <p className='disignationname' style={{ fontSize: '10px' }}>Associate Software Engineer</p>
+                            <p className='disignationname' style={{ fontSize: '10px' }}>Associate Software Developer</p>
                             <br />
                             <div style={{ fontSize: "12px" }}>
                                 <p>14/Mar/2022 - Till date </p>
                                 <p>Responsibility : Web Developer</p>
-                                <p>Tech Used : React, ExpressJs, Mysql, Microsoft Sharepoint.</p>
+                                <p>Tech Used : TypeScript, React, ExpressJs, MongoDB, Microsoft Sharepoint.</p>
                                 <p>No of Applications Developed: 05</p>
 
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="" className="hidden md:block">
+                {/* <section id="" className="hidden md:block">
                     <div className='m-5 p-5 educationsection shadow-pop-brConstent' style={{ background: "#2d483f", borderRadius: "15px" }}>
                         <p className='workexprenceheading'>Education</p>
                         <p className='areatitle'>Graduation</p>
@@ -299,7 +306,7 @@ const About = () => {
                         <p className='institute'>Bhashyam Public School - Vizag</p>
                         <p className='year'>2015</p>
                     </div>
-                </section>
+                </section> */}
             </div>
 
 

@@ -37,12 +37,12 @@ function App() {
           <div className='main'>
             <NavBar />
             <Routes>
-              <Route
+              {/* <Route
                 path="/"
                 element={<Application />}
-              ></Route>
+              ></Route> */}
               <Route
-                path="/about"
+                path="/"
                 element={<About />}
               ></Route>
               <Route

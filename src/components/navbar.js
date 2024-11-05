@@ -11,8 +11,8 @@ import {
 const NavBar = () => {
     const location = useLocation(); // Get the current location
     const navLinks = [
-        { href: '/', label: 'Home' },
-        { href: '/about', label: 'About' },
+        // { href: '/', label: 'Home' },
+        { href: '/', label: 'About' },
         { href: '/projects', label: 'Projects' },
         { href: '/contacts', label: 'Contact' },
         { href: '/blog', label: 'Blog' },

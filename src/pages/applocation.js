@@ -21,16 +21,18 @@ import MACImage from '../asserts/images/maccmd.png';
 import { Button } from "primereact/button";
 import Terminal from "../components/terminal";
 
+export const IntroMessage = (
+    <>
+        2.5 years of professional experience as a MERN Stack Developer, I have honed my skills in both <span className="highlight text-xs sm:text-xl">front-end</span> and <span className="highlight text-xs sm:text-xl">back-end</span> development. I have a proven track record of leading
+        cross-functional teams to deliver high-quality software solutions.
+    </>
+);
+
 const Application = () => {
     // const IntroMessage = 'My passion lies in crafting engaging, accessible, and user-centric experiences that leave a lasting impact.';
     // const IntroMessage = '2.5 years of professional experience as a Frontend Engineer, I have honed my skills in both front-end and back-end development. I have a proven track record of leading cross-functional teams to deliver high-quality software solutions.'
 
-    const IntroMessage = (
-        <>
-            2.5 years of professional experience as a Frontend Engineer, I have honed my skills in both <span className="highlight text-xs sm:text-xl">front-end</span> and <span className="highlight text-xs sm:text-xl">back-end</span> development. I have a proven track record of leading
-            cross-functional teams to deliver high-quality software solutions.
-        </>
-    );
+    
 
     const [isOpen, setIsOpen] = useState(false); // CMD POPUP State
 
