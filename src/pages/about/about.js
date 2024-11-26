@@ -251,6 +251,14 @@ const About = () => {
 
     return (
         <>
+            <div className="h-[400px] w-full p-10 text-white flex justify-center flex-col gap-5 items-center border text-lg">
+                <p>I am excited to share that I have recently redesigned my portfolio! Click below to explore.</p>
+                <a href="https://newnagendra.netlify.app/" target="_blank">
+                    <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+                        Click here
+                    </button>
+                </a>
+            </div>
             <p className='text-3xl font-bold sm:text-6xl flex justify-center m-10 p-10 ' style={{ color: "#BFD8AF" }}>I&apos;m Nagendra.</p>
             <div className='flex justify-around'>
                 <div className='flex justify-around flex-row' style={{ width: "50%" }}>
@@ -262,17 +270,17 @@ const About = () => {
                 </div>
 
             </div>
-            <div className='introsectioncustom m-10 text-justify '>
-            <p className="m-10 text-xs sm:text-xl  justify-center items-center gap-1 flex-wrap text-justify" style={{ color: "#F0F3FF" }}>{IntroMessage}</p>
+            <div className='introsectioncustom text-justify '>
+                <p className="m-10 text-xs sm:text-xl  justify-center items-center gap-1 flex-wrap text-justify" style={{ color: "#F0F3FF" }}>{IntroMessage}</p>
 
                 {/* <p>I have an insatiable curiosity that drives me to constantly seek knowledge and growth. Whether it&apos;s staying ahead of industry trends, mastering new technologies, or exploring innovative solutions, what makes coding truly special is its power to bring ideas to life. It&apos;s a creative outlet where innovation knows no bounds. It&apos;s where I get to turn imagination into reality.</p> */}
                 <br />
                 {/* <p>Over the past two years, I have immersed myself in the web development industry, eagerly embracing new technologies and methodologies. I pride myself on being the kind of person who upholds loyalty and honesty, values that contribute to fostering a healthy and positive environment within the organization.</p> */}
             </div>
 
-            <div className='flex justify-evenly flex-wrap '>
+            <div className='flex justify-evenly flex-wrap' >
                 <section id="section-about">
-                    <div className='m-5 p-5 workexperiencesection shadow-pop-brConstent' style={{ background: "#2d483f", borderRadius: "15px" }}>
+                    <div className='m-5 p-5 workexperiencesection shadow-pop-brConstent' style={{ background: "linear-gradient(90deg,#294b29,#50623a,#789461)", borderRadius: "15px" }}>
                         <p className='workexprenceheading'>Corporate Work Experience</p>
                         <div className=' items-center'>
                             <img src={ProdaptLogo} alt='prodapt logo' className='m-2 companylogo' />

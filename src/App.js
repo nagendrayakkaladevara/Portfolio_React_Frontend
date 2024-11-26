@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
   }, []);
-  
+
   return (
     <>
       <PrimeReactProvider>
@@ -63,6 +63,7 @@ function App() {
               <Route path="/psdtohtml" element={<Psdtohtml />} />
               <Route path="/project/:projectName" element={<Project />} />
               <Route path="/blog/:blogId" element={<BlogPost />} />
+              <Route path="*" element={<About />} />
             </Routes>
             <Footer />
           </div>
